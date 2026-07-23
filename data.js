@@ -86,7 +86,7 @@ window.FLH = {
       value: 'Builds internal facilitation capability, extending FLH’s reach through a trained, certified network — with a sustainable engagement model that keeps Navigators active and connected throughout the year.',
       next: 'Re-engage Cohorts 1 and 2, launch Cohort 3 in September 2026 and deliver the blended Train the Trainer certification.',
       volume: { n: 27, label: 'staff through the program; Cohort 3 launches September 2026' },
-      stat: { n: '50+', label: 'facilitations delivered — 93% of graduates (25 of 27) still active employees' } },
+      stat: { n: '75', label: 'facilitations delivered — 93% of graduates (25 of 27) still active employees' } },
 
     { id: 'compliance', name: 'Compliance', stage: 'foundations', audience: 'all', partner: 'inhouse', status: 'live',
       what: 'Ongoing and annual compliance education and delivery, with role-dependent content where needed.',
