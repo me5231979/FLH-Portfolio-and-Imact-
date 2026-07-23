@@ -46,7 +46,8 @@ window.FLH = {
       what: 'Leadership program for new and newly promoted people managers.',
       who: 'Managers',
       value: 'Establishes a consistent management baseline early in the manager lifecycle.',
-      volume: { n: 15, label: 'pilot participants' } },
+      volume: { n: 15, label: 'pilot participants' },
+      nps: { score: 4.31, responses: 48 } },
 
     { id: 'speak', name: 'SPEAK', stage: 'foundations', audience: 'targeted', partner: 'edassist', status: 'live',
       what: 'Language literacy program powered via EdAssist.',
