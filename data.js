@@ -36,7 +36,7 @@ window.FLH = {
       value: 'Builds baseline AI capability across the workforce and drives AI enablement, including a manager workstream that translates AI exposure into workforce actions.' },
 
     { id: 'lr', name: 'Leadership Redefined', stage: 'leadership', audience: 'leaders', partner: 'inhouse', status: 'live',
-      what: 'Vanderbilt’s premier chancellor-sponsored development program for senior leaders: six leadership modules, a capstone innovation project, three personalized coaching sessions and weekly synthesis sessions.',
+      what: 'Vanderbilt’s premier chancellor-sponsored development program for senior leaders: six leadership modules, a capstone innovation project, three personalized coaching sessions and weekly synthesis sessions. The LR Symposium is one delivery vehicle for a cohort, not the program itself.',
       who: 'M1–E1 leaders',
       value: 'Prepares leaders to move with clarity, agility and conviction in service of the institution’s ambition to define the great research university for the 21st century.',
       volume: { n: 113, label: 'M1–E1 leaders completed' },
@@ -75,7 +75,7 @@ window.FLH = {
       who: 'Executive stakeholders',
       value: 'Guides talent and learning strategy at the executive level, keeping enterprise capability-building aligned and governed.' },
 
-    { id: 'summit', name: 'Summit', stage: 'mobility', audience: 'all', partner: 'oracle', status: 'live',
+    { id: 'summit', name: 'Summit', stage: 'mobility', audience: 'all', partner: 'oracle', status: 'in-development',
       what: 'Structured program for retaining, developing and moving staff, built on four interdependent components: Oracle, change management, a mandatory five-business-day internal search process and deliberate people practices. Transfer Portal is the employee front door; Workforce Intelligence is the leader-facing view.',
       who: 'All staff',
       value: 'Gives committed staff a visible path forward and gives leaders tools to act before a vacancy or resignation forces the conversation.' },
@@ -90,7 +90,8 @@ window.FLH = {
     { id: 'compliance', name: 'Compliance', stage: 'foundations', audience: 'all', partner: 'inhouse', status: 'live',
       what: 'Ongoing and annual compliance education and delivery, with role-dependent content where needed.',
       who: 'All staff',
-      value: 'Keeps the workforce current on required compliance and manages institutional risk.' },
+      value: 'Keeps the workforce current on required compliance and manages institutional risk.',
+      volume: { n: 'All', label: 'new hires and existing staff' } },
 
     { id: 'cohort', name: 'Cohort Certification Program', stage: 'capability', audience: 'all', partner: 'edassist', status: 'live',
       what: 'Non-degree certification programs funded through the tuition reimbursement benefit, run as cohorts in partnership with EdAssist.',
@@ -101,7 +102,7 @@ window.FLH = {
     { id: 'products', name: 'Product Governance & Oversight', stage: 'governance', audience: 'exec', partner: 'inhouse', status: 'live',
       what: 'Oversight and management of all the products FLH uses, delivers and subleases.',
       who: 'Product users',
-      value: 'Economies of skill, standardization and a coherent product portfolio across the enterprise.' },
+      value: 'Economies of skill and standardization across the enterprise.' },
 
     { id: 'coaching', name: 'Coaching', stage: 'capability', audience: 'all', partner: 'abroad', status: 'in-development',
       what: 'Professional coaching in partnership with Abroad (carries an additional cost).',
