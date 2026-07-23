@@ -103,7 +103,9 @@ window.FLH = {
     { id: 'products', name: 'Product Governance & Oversight', stage: 'governance', audience: 'exec', partner: 'inhouse', status: 'live',
       what: 'Oversight and management of all the products FLH uses, delivers and subleases.',
       who: 'Product users',
-      value: 'Economies of skill and standardization across the enterprise.' },
+      value: 'Economies of skill and standardization across the enterprise.',
+      volume: { n: 9, label: 'product uses across five products, excluding Oracle' },
+      stat: { n: '200', label: 'course assets generated' } },
 
     { id: 'coaching', name: 'Coaching', stage: 'capability', audience: 'all', partner: 'abroad', status: 'in-development',
       what: 'Professional coaching in partnership with Abroad (carries an additional cost).',
