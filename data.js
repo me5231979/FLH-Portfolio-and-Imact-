@@ -92,7 +92,8 @@ window.FLH = {
       what: 'Ongoing and annual compliance education and delivery, with role-dependent content where needed.',
       who: 'All staff',
       value: 'Keeps the workforce current on required compliance and manages institutional risk.',
-      volume: { n: 'All', label: 'new hires and existing staff' } },
+      volume: { n: 4526, label: 'enrolled across 36 compliance courses' },
+      stat: { n: '71%', label: 'completion rate for 2026 — 3,212 of 4,526 completed' } },
 
     { id: 'cohort', name: 'Cohort Certification Program', stage: 'capability', audience: 'all', partner: 'edassist', status: 'live',
       what: 'Non-degree certification programs funded through the tuition reimbursement benefit, run as cohorts in partnership with EdAssist.',
