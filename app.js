@@ -128,7 +128,7 @@ function renderPanelHome() {
   panel.innerHTML = `
     <p class="eyebrow">How to read the map</p>
     <h3>One hub. Fourteen orbits.</h3>
-    <p>Every gold line shows how two programs work together &mdash; one sends people to the other, they run on the same tool, or one clears the way so the other can do its job. The thin lines simply mean FLH runs the program. A dashed circle means the program is still being built.</p>
+    <p>Every gold line shows how two or more programs work together. One sends people to the other, they run on the same tool, or one clears the way so the other can do its job. The solid circle means the program is live. A dashed circle means the program is still being built.</p>
     <p class="plabel">Try it</p>
     <p style="margin-top:.4rem">Click any program to see what it connects to &mdash; or hover over a line to see why.</p>`;
 }
