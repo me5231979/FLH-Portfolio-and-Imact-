@@ -128,9 +128,9 @@ function renderPanelHome() {
   panel.innerHTML = `
     <p class="eyebrow">How to read the map</p>
     <h3>One hub. Fourteen orbits.</h3>
-    <p>Every gold line is a real hand-off between two programs &mdash; a graduate who flows onward, a platform they share, a barrier one removes so another can work. Faint spokes mark FLH stewardship. A dashed ring means the program is still in development.</p>
+    <p>Every gold line shows how two programs work together &mdash; one sends people to the other, they run on the same tool, or one clears the way so the other can do its job. The thin lines simply mean FLH runs the program. A dashed circle means the program is still being built.</p>
     <p class="plabel">Try it</p>
-    <p style="margin-top:.4rem">Select any program to trace what it feeds and what feeds it &mdash; or hover a line to see why it exists.</p>`;
+    <p style="margin-top:.4rem">Click any program to see what it connects to &mdash; or hover over a line to see why.</p>`;
 }
 
 function renderPanel(p) {
@@ -197,9 +197,9 @@ gEdges.addEventListener('mouseleave', () => { tip.hidden = true; });
 /* ---------- lenses ---------- */
 const legend = document.getElementById('const-legend');
 const TISSUE_LEGEND = `
-  <span><i style="background:var(--vu-gold-flat)"></i> Line = a real hand-off between programs</span>
-  <span><i style="background:rgba(207,174,112,.25)"></i> Spoke = FLH stewardship</span>
-  <span><i style="background:transparent;border:1.5px dashed rgba(255,255,255,.6)"></i> Dashed ring = in development</span>`;
+  <span><i style="background:var(--vu-gold-flat)"></i> Gold line = programs that work together</span>
+  <span><i style="background:rgba(207,174,112,.25)"></i> Thin line = run by FLH</span>
+  <span><i style="background:transparent;border:1.5px dashed rgba(255,255,255,.6)"></i> Dashed circle = still being built</span>`;
 
 function applyLens(lens) {
   document.querySelectorAll('.lens__chip').forEach(c => {
