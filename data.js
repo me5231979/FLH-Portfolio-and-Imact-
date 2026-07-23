@@ -145,6 +145,32 @@ window.FLH = {
     { a: 'cohort',    b: 'marketplace', why: 'Certifications earned in cohorts surface as skills and readiness in the talent platform.' }
   ]
 ,
+  /* 2025 learner consumption — one row per item consumption in the LMS.
+     Themes are keyword-classified; SBJA figures count items whose names match
+     a named skill in the 4,410-skill Skills Library. */
+  consumption: {
+    year: 2025,
+    total: 318530,
+    uniqueItems: 3136,
+    sbja: { items: 808, consumptions: 43558 },
+    themes: [
+      { theme: 'Compliance & safety', n: 192090, share: 60, program: 'Compliance',
+        top: 'Active Assailant Training · Protection of Minors · lab and workplace safety' },
+      { theme: 'Personal & professional growth', n: 33390, share: 10, program: 'Anchors Edge',
+        top: 'Invest in You · Communicating with Transparency · TED talks on listening' },
+      { theme: 'Enterprise systems', n: 31484, share: 10, program: 'Summit · Talent Marketplace (Oracle backbone)',
+        top: 'UKG timecards · Oracle Cloud Expenses · Vanderbilt One Card' },
+      { theme: 'Role & department specific', n: 31226, share: 10, program: '',
+        top: 'Student-org leader training · departmental onboarding · trade-specific modules' },
+      { theme: 'AI fluency', n: 11374, share: 4, program: 'CHART',
+        top: 'Using AI to Boost Your Creative Potential · VU AI Policy · ChatGPT 101 and 102' },
+      { theme: 'Career & talent marketplace', n: 10186, share: 3, program: 'Talent Marketplace · Summit',
+        top: 'Navigate: Using the Talent Marketplace · LinkedIn profile and resume courses' },
+      { theme: 'Leadership & management', n: 8780, share: 3, program: 'Manager Voyage · Leadership Redefined',
+        top: 'Be the Manager People Won\u2019t Leave · HRVU New Leader Orientation · delegation and coaching' }
+    ]
+  },
+
   /* FY27 performance goals — People, Culture and Belonging.
      Progress values arrive later; scale milestones are fixed. */
   /* Products overseen by Product Governance & Oversight.
