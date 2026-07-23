@@ -85,7 +85,8 @@ window.FLH = {
       who: 'All staff — facilitators and aspiring facilitators',
       value: 'Builds internal facilitation capability, extending FLH’s reach through a trained, certified network — with a sustainable engagement model that keeps Navigators active and connected throughout the year.',
       next: 'Re-engage Cohorts 1 and 2, launch Cohort 3 in September 2026 and deliver the blended Train the Trainer certification.',
-      volume: { n: 2, label: 'cohorts trained; Cohort 3 launches September 2026' } },
+      volume: { n: 27, label: 'staff through the program; Cohort 3 launches September 2026' },
+      stat: { n: '93%', label: 'still active employees (25 of 27)' } },
 
     { id: 'compliance', name: 'Compliance', stage: 'foundations', audience: 'all', partner: 'inhouse', status: 'live',
       what: 'Ongoing and annual compliance education and delivery, with role-dependent content where needed.',
@@ -147,13 +148,21 @@ window.FLH = {
      Progress values arrive later; scale milestones are fixed. */
   /* Products overseen by Product Governance & Oversight.
      assets / timeSaved populate as measurement comes online. */
+  /* Time saved = units produced × (traditional build time − AI-enabled build time).
+     Multipliers are conservative industry benchmarks — replace with measured values. */
   products_overseen: [
-    { name: 'Synthesia',       users: 6, ai: 'Yes',         assets: null, timeSaved: null },
-    { name: 'Articulate Rise', users: 7, ai: 'AI-assisted', assets: null, timeSaved: null },
-    { name: 'Yoodli',          users: 3, ai: 'Yes',         assets: null, timeSaved: null },
-    { name: 'SparkWise',       users: 3, ai: 'Yes',         assets: null, timeSaved: null },
-    { name: 'ChatThing',       users: 1, ai: 'Yes',         assets: null, timeSaved: null },
-    { name: 'Guidee',          users: 1, ai: 'Yes',         assets: null, timeSaved: null }
+    { name: 'Synthesia',       users: 6, ai: 'Yes',         assets: '150 finished minutes of learning video',
+      timeSaved: '≈ 375 hr', formula: '150 min × (3 hr − 0.5 hr) per finished minute' },
+    { name: 'Articulate Rise', users: 7, ai: 'AI-assisted', assets: '10 courses built',
+      timeSaved: '≈ 240 hr', formula: '10 courses × (36 hr − 12 hr) per course' },
+    { name: 'ChatThing',       users: 1, ai: 'Yes',         assets: '5 chat agents built',
+      timeSaved: '≈ 90 hr',  formula: '5 agents × (20 hr − 2 hr) per agent' },
+    { name: 'Yoodli',          users: 3, ai: 'Yes',         assets: '4 interactive scenarios built',
+      timeSaved: '≈ 64 hr',  formula: '4 scenarios × (20 hr − 4 hr) per scenario' },
+    { name: 'SparkWise',       users: 3, ai: 'Yes',         assets: '5 courses delivered',
+      timeSaved: '≈ 50 hr',  formula: '5 deliveries × (12 hr − 2 hr) per delivery' },
+    { name: 'Guidee',          users: 1, ai: 'Yes',         assets: 'In development',
+      timeSaved: null, formula: '' }
   ],
 
   goals: [

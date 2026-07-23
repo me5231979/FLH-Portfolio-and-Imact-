@@ -293,8 +293,8 @@ document.querySelector('#products-table tbody').innerHTML = D.products_overseen.
     <td><b>${esc(p.name)}</b></td>
     <td><b>${p.users}</b> ${p.users === 1 ? 'user' : 'users'}</td>
     <td>${esc(p.ai)}</td>
-    <td>${p.assets != null ? `<b>${p.assets.toLocaleString()}</b>` : '<span class="muted">Data coming</span>'}</td>
-    <td>${p.timeSaved != null ? `<b>${esc(p.timeSaved)}</b>` : '<span class="muted">Data coming</span>'}</td>
+    <td>${p.assets != null ? `<b>${esc(p.assets)}</b>` : '<span class="muted">Data coming</span>'}</td>
+    <td>${p.timeSaved != null ? `<b>${esc(p.timeSaved)}</b><br><span class="muted">${esc(p.formula)}</span>` : '<span class="muted">Data coming</span>'}</td>
   </tr>`).join('');
 
 /* ---------- FY27 goals ---------- */
