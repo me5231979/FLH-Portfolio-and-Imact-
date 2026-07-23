@@ -3,7 +3,7 @@
 A standalone single-page dashboard that makes the Futures Learning Hub portfolio visible
 as a system: fourteen programs, one purpose — growth.
 
-- **The constellation** — an interactive map of all 14 FLH programs and the 19 real
+- **The constellation** — an interactive map of all 14 FLH programs and the 22 real
   hand-offs between them (shared platforms, graduate flows, removed barriers). Select a
   program to trace what it feeds and what feeds it; hover any line to see why it exists.
   Lenses regroup the portfolio by lifecycle stage, audience, or delivery partner.

@@ -57,7 +57,7 @@ window.FLH = {
       stat: { n: '9', label: 'completed' } },
 
     { id: 'anchors', name: 'Anchors Edge', stage: 'foundations', audience: 'all', partner: 'inhouse', status: 'live',
-      what: 'Weekly all-staff virtual lunch-and-learn series.',
+      what: 'A different 45-minute virtual course every week — an all-staff series built to drive growth and development, from career tools to communication to leading well.',
       who: 'All staff',
       value: 'Provides a low-barrier, recurring touchpoint for continuous learning across the enterprise.',
       volume: { n: 1000, label: 'employees registered for at least one session' },
@@ -131,6 +131,9 @@ window.FLH = {
     { a: 'chart',     b: 'navigators',  why: 'CHART’s workshop series is a delivery lane for the trained facilitator network.' },
     { a: 'chart',     b: 'voyage',      why: 'CHART’s manager workstream feeds Manager Voyage — AI fluency becomes part of the management baseline.' },
     { a: 'navigators',b: 'anchors',     why: 'Navigators-trained facilitators extend FLH’s reach through recurring sessions like Anchors Edge.' },
+    { a: 'anchors',   b: 'marketplace', why: 'Weekly sessions spotlight the Talent Marketplace — Navigate sessions turn awareness into the platform’s 90% adoption.' },
+    { a: 'anchors',   b: 'summit',      why: 'Weekly growth and development topics ready staff for the paths Summit opens.' },
+    { a: 'anchors',   b: 'voyage',      why: 'Manager-focused sessions extend Voyage’s management baseline between cohorts.' },
     { a: 'navigators',b: 'voyage',      why: 'Certified Navigators facilitate Vanderbilt Voyage programming — the facilitator bench powers the manager program.' },
     { a: 'speak',     b: 'cohort',      why: 'Both run on the EdAssist partnership — one benefit infrastructure, two doors.' },
     { a: 'speak',     b: 'summit',      why: 'SPEAK removes the language barrier so more staff can actually use Summit’s path forward.' },
