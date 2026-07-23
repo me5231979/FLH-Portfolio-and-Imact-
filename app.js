@@ -111,8 +111,9 @@ let selected = null;
 
 function metricsHTML(p) {
   const bits = [];
-  if (p.volume) bits.push(`<div><b>${p.volume.n.toLocaleString()}</b><span>${esc(p.volume.label)}</span></div>`);
+  if (p.volume) bits.push(`<div><b>${typeof p.volume.n === 'number' ? p.volume.n.toLocaleString() : esc(p.volume.n)}</b><span>${esc(p.volume.label)}</span></div>`);
   if (p.nps) bits.push(`<div><b>${p.nps.score.toFixed(2)}</b><span>NPS of 5 &middot; ${p.nps.responses} responses</span></div>`);
+  if (p.stat) bits.push(`<div><b>${esc(p.stat.n)}</b><span>${esc(p.stat.label)}</span></div>`);
   return bits.length
     ? `<p class="plabel">Measured so far</p><div class="pmetrics">${bits.join('')}</div>`
     : `<p class="plabel">Measured so far</p><p style="margin-top:.4rem">Metrics for this program are being stood up &mdash; reach and NPS will populate here.</p>`;
@@ -141,6 +142,7 @@ function renderPanel(p) {
     <p>${esc(p.what)}</p>
     <p class="plabel">Who it serves</p><p style="margin-top:.4rem">${esc(p.who)}</p>
     <p class="plabel">Value to Vanderbilt</p><p style="margin-top:.4rem">${esc(p.value)}</p>
+    ${p.next ? `<p class="plabel">The road ahead</p><p style="margin-top:.4rem">${esc(p.next)}</p>` : ''}
     ${metricsHTML(p)}
     <p class="plabel">Connective tissue &middot; ${ties.length}</p>
     <ul class="pties">${ties.map(t =>
@@ -246,10 +248,10 @@ flow.addEventListener('click', ev => {
 /* ---------- impact ---------- */
 const cards = document.getElementById('impact-cards');
 const featured = [
+  { id: 'marketplace', stat: '90%', cap: '3,982 of 4,440 employees using the talent platform' },
   { id: 'anchors', stat: '1,000', cap: 'employees registered for at least one session' },
   { id: 'lr',      stat: '113',   cap: 'M1&ndash;E1 leaders through the full program' },
-  { id: 'alumni',  stat: '4.75',  cap: 'NPS from the graduate community', isNps: true },
-  { id: 'voyage',  stat: '15',    cap: 'managers in the founding pilot cohort' }
+  { id: 'alumni',  stat: '4.75',  cap: 'NPS from the graduate community', isNps: true }
 ];
 cards.innerHTML = featured.map(f => {
   const p = byId[f.id];
@@ -264,8 +266,9 @@ cards.innerHTML = featured.map(f => {
 
 const tbody = document.querySelector('#impact-table tbody');
 tbody.innerHTML = D.programs.map(p => {
-  const reach = p.volume ? `<b>${p.volume.n.toLocaleString()}</b> ${esc(p.volume.label)}` : '<span class="muted">Data coming</span>';
-  const impact = p.nps ? `<b>NPS ${p.nps.score.toFixed(2)}</b> of 5 &middot; ${p.nps.responses} responses` : '<span class="muted">Data coming</span>';
+  const reach = p.volume ? `<b>${typeof p.volume.n === 'number' ? p.volume.n.toLocaleString() : esc(p.volume.n)}</b> ${esc(p.volume.label)}` : '<span class="muted">Data coming</span>';
+  const impact = p.nps ? `<b>NPS ${p.nps.score.toFixed(2)}</b> of 5 &middot; ${p.nps.responses} responses`
+    : p.stat ? `<b>${esc(p.stat.n)}</b> ${esc(p.stat.label)}` : '<span class="muted">Data coming</span>';
   return `<tr>
     <td><b>${esc(p.name)}</b><br><span class="muted">${esc(stageName(p.stage))} &middot; ${esc(partnerName(p.partner))}</span></td>
     <td>${esc(p.who)}</td><td>${reach}</td><td>${impact}</td>

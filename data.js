@@ -63,7 +63,9 @@ window.FLH = {
     { id: 'marketplace', name: 'Talent Marketplace', stage: 'mobility', audience: 'all', partner: 'oracle', status: 'live',
       what: 'Oracle Grow–based staff talent platform.',
       who: 'All staff',
-      value: 'Connects staff to growth opportunities and surfaces internal talent for development and mobility.' },
+      value: 'Connects staff to growth opportunities and surfaces internal talent for development and mobility.',
+      volume: { n: 3982, label: 'employees using the platform, of 4,440 staff' },
+      stat: { n: '90%', label: 'utilization' } },
 
     { id: 'vault', name: 'VAULT', stage: 'governance', audience: 'exec', partner: 'inhouse', status: 'in-development',
       what: 'Bi-monthly community of practice and enterprise governance council.',
@@ -75,10 +77,12 @@ window.FLH = {
       who: 'All staff',
       value: 'Gives committed staff a visible path forward and gives leaders tools to act before a vacancy or resignation forces the conversation.' },
 
-    { id: 'navigators', name: 'Navigators Session', stage: 'capability', audience: 'all', partner: 'inhouse', status: 'live',
-      what: 'FLH’s facilitator network and facilitation education program, with the option to offer facilitated courses.',
+    { id: 'navigators', name: 'Dore to Dore Navigators', stage: 'capability', audience: 'all', partner: 'inhouse', status: 'live',
+      what: 'The Dore to Dore Navigator Program trains and certifies Vanderbilt staff as facilitators of Vanderbilt Voyage and People, Culture and Belonging programming, through a blended Train the Trainer certification.',
       who: 'All staff — facilitators and aspiring facilitators',
-      value: 'Builds internal facilitation capability, extending FLH’s reach through a trained network.' },
+      value: 'Builds internal facilitation capability, extending FLH’s reach through a trained, certified network — with a sustainable engagement model that keeps Navigators active and connected throughout the year.',
+      next: 'Re-engage Cohorts 1 and 2, launch Cohort 3 in September 2026 and deliver the blended Train the Trainer certification.',
+      volume: { n: 2, label: 'cohorts trained; Cohort 3 launches September 2026' } },
 
     { id: 'compliance', name: 'Compliance', stage: 'foundations', audience: 'all', partner: 'inhouse', status: 'live',
       what: 'Ongoing and annual compliance education and delivery, with role-dependent content where needed.',
@@ -104,6 +108,7 @@ window.FLH = {
       what: 'Ongoing series for graduates of the Leadership Redefined program.',
       who: 'Leadership Redefined graduates',
       value: 'Keeps LR alumni informed on topics and trends impacting Vanderbilt and ways of work.',
+      volume: { n: '50+', label: 'attendees across four sessions' },
       nps: { score: 4.75, responses: 8 } }
   ],
 
@@ -115,6 +120,7 @@ window.FLH = {
     { a: 'chart',     b: 'summit',      why: 'CHART’s manager workstream translates AI exposure into the workforce actions Summit operationalizes.' },
     { a: 'chart',     b: 'navigators',  why: 'CHART’s workshop series is a delivery lane for the trained facilitator network.' },
     { a: 'navigators',b: 'anchors',     why: 'Navigators-trained facilitators extend FLH’s reach through recurring sessions like Anchors Edge.' },
+    { a: 'navigators',b: 'voyage',      why: 'Certified Navigators facilitate Vanderbilt Voyage programming — the facilitator bench powers the manager program.' },
     { a: 'speak',     b: 'cohort',      why: 'Both run on the EdAssist partnership — one benefit infrastructure, two doors.' },
     { a: 'speak',     b: 'summit',      why: 'SPEAK removes the language barrier so more staff can actually use Summit’s path forward.' },
     { a: 'marketplace', b: 'summit',    why: 'Both run on Oracle — Summit’s Transfer Portal opens into the marketplace’s opportunity feed.' },
