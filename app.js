@@ -253,16 +253,49 @@ const featured = [
   { id: 'lr',      stat: '113',   cap: 'M1&ndash;E1 leaders through the full program' },
   { id: 'alumni',  stat: '4.75',  cap: 'NPS from the graduate community', isNps: true }
 ];
-cards.innerHTML = featured.map(f => {
-  const p = byId[f.id];
-  const nps = p.nps ? `<div class="npsbar"><i style="width:${(p.nps.score / 5) * 100}%"></i></div>
-    <p class="npscap">NPS ${p.nps.score.toFixed(2)} of 5 &middot; ${p.nps.responses} responses</p>` : '';
-  return `<div class="icard" data-reveal>
-    <p class="eyebrow">${esc(stageName(p.stage))}</p>
-    <h3>${esc(p.name)}</h3>
-    <p class="big">${f.stat}${f.isNps ? '<small> / 5</small>' : ''}</p>
-    <p class="cap">${f.cap}</p>${f.isNps ? '' : nps}</div>`;
-}).join('');
+function programCards() {
+  return featured.map(f => {
+    const p = byId[f.id];
+    const nps = p.nps ? `<div class="npsbar"><i style="width:${(p.nps.score / 5) * 100}%"></i></div>
+      <p class="npscap">NPS ${p.nps.score.toFixed(2)} of 5 &middot; ${p.nps.responses} responses</p>` : '';
+    return `<div class="icard">
+      <p class="eyebrow">${esc(stageName(p.stage))}</p>
+      <h3>${esc(p.name)}</h3>
+      <p class="big">${f.stat}${f.isNps ? '<small> / 5</small>' : ''}</p>
+      <p class="cap">${f.cap}</p>${f.isNps ? '' : nps}</div>`;
+  }).join('');
+}
+const CARD_SETS = {
+  consumption: [
+    { eyebrow: 'Learner consumption', title: 'Courses completed', big: '&mdash;', cap: 'Data coming' },
+    { eyebrow: 'Learner consumption', title: 'Hours of learning', big: '&mdash;', cap: 'Data coming' },
+    { eyebrow: 'Learner consumption', title: 'Assets consumed', big: '&mdash;', cap: 'Data coming' },
+    { eyebrow: 'Learner consumption', title: 'Active learners', big: '&mdash;', cap: 'Data coming' }
+  ],
+  products: [
+    { eyebrow: 'Product portfolio', title: 'Products governed', big: '6', cap: 'Synthesia, Rise, Yoodli, SparkWise, ChatThing and Guidee' },
+    { eyebrow: 'Product portfolio', title: 'Licensed users', big: '21', cap: 'staff building with governed products' },
+    { eyebrow: 'Product portfolio', title: 'Estimated time saved', big: '&asymp;832', small: ' hr', cap: 'about 40% of a working year' },
+    { eyebrow: 'Product portfolio', title: 'Course assets generated', big: '200', cap: 'tracked at the portfolio level' }
+  ],
+  goals: [
+    { eyebrow: 'FY27 &middot; PCB', title: 'Performance goals', big: '3', cap: 'workforce intelligence, manager effectiveness, AI readiness' },
+    { eyebrow: 'Goal 01 target', title: 'Business units live', big: '85%', cap: 'Workforce Intelligence and Transfer Portal &mdash; 33 of 39' },
+    { eyebrow: 'Goal 02 target', title: 'Managers at the standard', big: '80%', cap: 'demonstrated leader behavior, measured at scale' },
+    { eyebrow: 'Goal 03 target', title: 'AI-readiness actions', big: '25%', cap: 'managers or teams assessed, actions implemented' }
+  ]
+};
+function renderCards(pane) {
+  if (pane === 'programs') { cards.innerHTML = programCards(); return; }
+  cards.innerHTML = CARD_SETS[pane].map(c => `
+    <div class="icard">
+      <p class="eyebrow">${c.eyebrow}</p>
+      <h3>${c.title}</h3>
+      <p class="big">${c.big}${c.small ? `<small>${c.small}</small>` : ''}</p>
+      <p class="cap">${c.cap}</p>
+    </div>`).join('');
+}
+renderCards('programs');
 
 const tbody = document.querySelector('#impact-table tbody');
 tbody.innerHTML = D.programs.map(p => {
@@ -285,6 +318,7 @@ document.querySelector('.dtabs').addEventListener('click', ev => {
     t.setAttribute('aria-selected', on);
   });
   document.querySelectorAll('.dpane').forEach(p => { p.hidden = p.id !== 'pane-' + tab.dataset.pane; });
+  renderCards(tab.dataset.pane);
 });
 
 /* ---------- product impact ---------- */
