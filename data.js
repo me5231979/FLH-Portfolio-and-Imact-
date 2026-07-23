@@ -36,7 +36,7 @@ window.FLH = {
       value: 'Builds baseline AI capability across the workforce and drives AI enablement, including a manager workstream that translates AI exposure into workforce actions.' },
 
     { id: 'lr', name: 'Leadership Redefined', stage: 'leadership', audience: 'leaders', partner: 'inhouse', status: 'live',
-      what: 'Vanderbilt’s premier Chancellor-sponsored development program for senior leaders: six leadership modules, a capstone innovation project, three personalized coaching sessions and weekly synthesis sessions.',
+      what: 'Vanderbilt’s premier chancellor-sponsored development program for senior leaders: six leadership modules, a capstone innovation project, three personalized coaching sessions and weekly synthesis sessions.',
       who: 'M1–E1 leaders',
       value: 'Prepares leaders to move with clarity, agility and conviction in service of the institution’s ambition to define the great research university for the 21st century.',
       volume: { n: 113, label: 'M1–E1 leaders completed' },
@@ -50,7 +50,7 @@ window.FLH = {
 
     { id: 'speak', name: 'SPEAK', stage: 'foundations', audience: 'targeted', partner: 'edassist', status: 'live',
       what: 'Language literacy program powered via EdAssist.',
-      who: 'Staff with low English proficiency, ESL, or who do not speak English',
+      who: 'Staff with low English proficiency, ESL or who do not speak English',
       value: 'Removes language barriers to participation and advancement, widening the growth path for underserved staff.' },
 
     { id: 'anchors', name: 'Anchors Edge', stage: 'foundations', audience: 'all', partner: 'inhouse', status: 'live',
@@ -71,7 +71,7 @@ window.FLH = {
       value: 'Guides talent and learning strategy at the executive level, keeping enterprise capability-building aligned and governed.' },
 
     { id: 'summit', name: 'Summit', stage: 'mobility', audience: 'all', partner: 'oracle', status: 'live',
-      what: 'Structured program for retaining, developing and moving staff, built on four interdependent components: Oracle, change management, a mandatory 5-business-day internal search process and deliberate people practices. Transfer Portal is the employee front door; Workforce Intelligence is the leader-facing view.',
+      what: 'Structured program for retaining, developing and moving staff, built on four interdependent components: Oracle, change management, a mandatory five-business-day internal search process and deliberate people practices. Transfer Portal is the employee front door; Workforce Intelligence is the leader-facing view.',
       who: 'All staff',
       value: 'Gives committed staff a visible path forward and gives leaders tools to act before a vacancy or resignation forces the conversation.' },
 

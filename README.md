@@ -1,7 +1,7 @@
 # FLH Portfolio — Futures Learning Hub Impact Dashboard
 
 A standalone single-page dashboard that makes the Futures Learning Hub portfolio visible
-as a system: fourteen programs, one engine.
+as a system: fourteen programs, one purpose — growth.
 
 - **The constellation** — an interactive map of all 14 FLH programs and the 17 real
   hand-offs between them (shared platforms, graduate flows, removed barriers). Select a
