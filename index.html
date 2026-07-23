@@ -126,15 +126,33 @@
       </div>
 
       <div class="dpane" id="pane-consumption" hidden>
-        <p class="goals__owner">2025 learning consumption &middot; every course start recorded in the LMS</p>
+        <p class="goals__owner">What people learned in 2025 &middot; by theme</p>
         <div class="impact__tablewrap">
           <table class="impact__table" id="consumption-table">
-            <caption class="sr-only">2025 learner consumption by theme, with share and connected FLH program</caption>
-            <thead><tr><th scope="col">What people learned</th><th scope="col">Consumptions</th><th scope="col">Share</th><th scope="col">Connected program</th><th scope="col">What they took</th></tr></thead>
+            <caption class="sr-only">2025 courses taken by theme, with share and connected FLH program</caption>
+            <thead><tr><th scope="col">Theme</th><th scope="col">Courses taken</th><th scope="col">Share</th><th scope="col">Connected program</th><th scope="col">What they took</th></tr></thead>
             <tbody></tbody>
           </table>
         </div>
-        <p class="impact__note">318,530 course consumptions across 3,136 unique learning items in 2025. 808 items match a named skill in the Skills-Based Job Architecture library (43,558 consumptions); themes are classified from item names, so shares are directional.</p>
+
+        <p class="goals__owner" style="margin-top:2.2rem">Courses taken per skill &middot; top skills from the SBJA library</p>
+        <div class="impact__tablewrap">
+          <table class="impact__table" id="skills-table">
+            <caption class="sr-only">Courses taken per SBJA skill</caption>
+            <thead><tr><th scope="col">Skill</th><th scope="col">SBJA skill category</th><th scope="col">Courses taken</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <p class="goals__owner" style="margin-top:2.2rem">Alignment to the seven core competencies</p>
+        <div class="impact__tablewrap">
+          <table class="impact__table" id="core-table">
+            <caption class="sr-only">Courses taken aligned to each of the seven core competencies</caption>
+            <thead><tr><th scope="col">Core competency</th><th scope="col">Courses taken</th><th scope="col">Share</th><th scope="col">What they took</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="impact__note">A course taken = one person enrolling in one course, once. Staff took 318,530 courses across 3,136 unique items in 2025 &mdash; about 72 per person, most of it annual compliance and safety modules. 808 items match a named skill in the 4,410-skill SBJA library (43,558 courses taken), and 114,032 courses taken &mdash; 36% &mdash; align to the seven core competencies. Themes and alignment are classified from course names, so shares are directional.</p>
       </div>
 
       <div class="dpane" id="pane-products" hidden>
@@ -192,7 +210,7 @@
   </div>
 </footer>
 
-<script src="data.js?v=19"></script>
-<script src="app.js?v=13"></script>
+<script src="data.js?v=20"></script>
+<script src="app.js?v=14"></script>
 </body>
 </html>

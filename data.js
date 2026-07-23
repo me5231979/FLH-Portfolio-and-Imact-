@@ -148,11 +148,16 @@ window.FLH = {
   /* 2025 learner consumption — one row per item consumption in the LMS.
      Themes are keyword-classified; SBJA figures count items whose names match
      a named skill in the 4,410-skill Skills Library. */
+  /* 2025 learning activity. A "course taken" = one person enrolling in one
+     course once; annual compliance modules mean most staff take dozens a year.
+     Themes and competency alignment are keyword-classified from item names. */
   consumption: {
     year: 2025,
     total: 318530,
+    perStaff: 72,
     uniqueItems: 3136,
     sbja: { items: 808, consumptions: 43558 },
+    coreAligned: 114032,
     themes: [
       { theme: 'Compliance & safety', n: 192090, share: 60, program: 'Compliance',
         top: 'Active Assailant Training · Protection of Minors · lab and workplace safety' },
@@ -168,6 +173,36 @@ window.FLH = {
         top: 'Navigate: Using the Talent Marketplace · LinkedIn profile and resume courses' },
       { theme: 'Leadership & management', n: 8780, share: 3, program: 'Manager Voyage · Leadership Redefined',
         top: 'Be the Manager People Won\u2019t Leave · HRVU New Leader Orientation · delegation and coaching' }
+    ],
+    topSkills: [
+      { skill: 'Oracle Cloud', cat: 'Technology Use, Monitoring and Control', n: 7466 },
+      { skill: 'Procurement', cat: 'Supply Chain Management', n: 7072 },
+      { skill: 'Compliance Training', cat: 'Legal, Regulation and Compliance', n: 3628 },
+      { skill: 'First Aid', cat: 'Healthcare', n: 2516 },
+      { skill: 'Bloodborne Pathogens', cat: 'Healthcare', n: 1996 },
+      { skill: 'Safety Training', cat: 'Legal, Regulation and Compliance', n: 1672 },
+      { skill: 'Arc Flash', cat: 'Engineering Design and Development', n: 1620 },
+      { skill: 'Fire Safety', cat: 'Administrative Services', n: 1202 },
+      { skill: 'Hygiene', cat: 'Healthcare', n: 1184 },
+      { skill: 'Fire Prevention', cat: 'Administrative Services', n: 1178 },
+      { skill: 'Laboratory Safety', cat: 'Research and Development', n: 1132 },
+      { skill: 'Injury Prevention', cat: 'Legal, Regulation and Compliance', n: 992 }
+    ],
+    core: [
+      { name: 'Radically collaborates and cultivates belonging', n: 37466,
+        top: 'Communicating with Transparency · Psychological Safety · listening skills' },
+      { name: 'Embodies an entrepreneurial spirit and leverages data and technology', n: 34580,
+        top: 'UKG and Oracle systems · Using AI to Boost Your Creative Potential' },
+      { name: 'Grows self and others', n: 21510,
+        top: 'Navigate: Using the Talent Marketplace · Invest in You · coaching' },
+      { name: 'Makes effective and ethical decisions for the University', n: 9916,
+        top: 'Institutional Neutrality Essentials · Conflict of Interest training' },
+      { name: 'Leads and inspires teams', n: 8800,
+        top: 'Be the Manager People Won\u2019t Leave · HRVU New Leader Orientation' },
+      { name: 'Develops and implements University strategy', n: 1040,
+        top: 'Event planning · crisis management' },
+      { name: 'Continuously strives for excellence', n: 720,
+        top: 'Customer service · time management' }
     ]
   },
 

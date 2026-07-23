@@ -267,10 +267,10 @@ function programCards() {
 }
 const CARD_SETS = {
   consumption: [
-    { eyebrow: '2025 consumption', title: 'Course consumptions', big: '318,530', cap: 'every course start recorded in the LMS' },
-    { eyebrow: '2025 consumption', title: 'Unique learning items', big: '3,136', cap: 'from compliance modules to TED talks' },
-    { eyebrow: '2025 consumption', title: 'Compliance &amp; safety', big: '60%', cap: 'of all consumption keeps the workforce current and safe' },
-    { eyebrow: '2025 consumption', title: 'Mapped to SBJA skills', big: '43,558', cap: '808 items match named skills in the 4,410-skill library' }
+    { eyebrow: '2025 learning', title: 'Courses taken', big: '318,530', cap: 'about 72 per staff member, most of it annual compliance' },
+    { eyebrow: '2025 learning', title: 'Unique learning items', big: '3,136', cap: 'from compliance modules to TED talks' },
+    { eyebrow: '2025 learning', title: 'Compliance &amp; safety', big: '60%', cap: 'of all courses taken keep the workforce current and safe' },
+    { eyebrow: '2025 learning', title: 'Core-competency aligned', big: '36%', cap: '114,032 courses taken map to the seven core competencies' }
   ],
   products: [
     { eyebrow: 'Product portfolio', title: 'Products governed', big: '6', cap: 'Synthesia, Rise, Yoodli, SparkWise, ChatThing and Guidee' },
@@ -329,6 +329,18 @@ document.querySelector('#consumption-table tbody').innerHTML = D.consumption.the
     <td><div class="sharebar"><i style="width:${t.share}%"></i></div>${t.share}%</td>
     <td>${t.program ? esc(t.program) : '<span class="muted">&mdash;</span>'}</td>
     <td><span class="muted">${esc(t.top)}</span></td>
+  </tr>`).join('');
+
+document.querySelector('#skills-table tbody').innerHTML = D.consumption.topSkills.map(t => `
+  <tr><td><b>${esc(t.skill)}</b></td><td>${esc(t.cat)}</td><td><b>${t.n.toLocaleString()}</b></td></tr>`).join('');
+
+const CORE_TOTAL = D.consumption.total;
+document.querySelector('#core-table tbody').innerHTML = D.consumption.core.map(c => `
+  <tr>
+    <td><b>${esc(c.name)}</b></td>
+    <td><b>${c.n.toLocaleString()}</b></td>
+    <td><div class="sharebar"><i style="width:${Math.max(1, Math.round(100 * c.n / CORE_TOTAL))}%"></i></div>${(100 * c.n / CORE_TOTAL).toFixed(1)}%</td>
+    <td><span class="muted">${esc(c.top)}</span></td>
   </tr>`).join('');
 
 /* ---------- product impact ---------- */
