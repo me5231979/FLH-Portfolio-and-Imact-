@@ -142,4 +142,39 @@ window.FLH = {
     { a: 'compliance',b: 'vault',       why: 'Compliance manages institutional risk; VAULT governs it at the enterprise level.' },
     { a: 'cohort',    b: 'marketplace', why: 'Certifications earned in cohorts surface as skills and readiness in the talent platform.' }
   ]
+,
+  /* FY27 performance goals — People, Culture and Belonging.
+     Progress values arrive later; scale milestones are fixed. */
+  goals: [
+    { num: 1,
+      title: 'Create Vanderbilt Workforce Intelligence and Transfer Portal',
+      desc: 'By Q4, launch an AI-enabled system that helps leaders see talent needs, retain top talent, strengthen succession and connect employees to internal opportunities across the university.',
+      unit: 'of business units live on the system',
+      scale: [
+        { label: 'Base value', n: '6%',  detail: '2 of 39 business units' },
+        { label: 'Threshold',  n: '50%', detail: '20 of 39' },
+        { label: 'Target',     n: '85%', detail: '33 of 39' },
+        { label: 'Reach',      n: '100%', detail: '39 of 39' }
+      ] },
+    { num: 2,
+      title: 'Increase manager effectiveness, measurable at scale',
+      desc: 'By Q4, implement a Vanderbilt manager standard that measures demonstrated leader behavior.',
+      unit: 'of managers meeting or aligned to the standard',
+      scale: [
+        { label: 'Base value', n: '15%', detail: '' },
+        { label: 'Threshold',  n: '50%', detail: '' },
+        { label: 'Target',     n: '80%', detail: '' },
+        { label: 'Reach',      n: '90%', detail: '' }
+      ] },
+    { num: 3,
+      title: 'Build workforce readiness for AI-enabled work',
+      desc: 'By Q4, equip managers to identify AI-exposed work, critical skills and emerging talent needs on their teams, and translate those insights into practical workforce actions.',
+      unit: 'of managers or teams assessed, with actions implemented',
+      scale: [
+        { label: 'Base value', n: '15%', detail: '' },
+        { label: 'Threshold',  n: '15%', detail: '' },
+        { label: 'Target',     n: '25%', detail: '' },
+        { label: 'Reach',      n: '40%', detail: '' }
+      ] }
+  ]
 };

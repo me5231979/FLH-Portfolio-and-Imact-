@@ -166,3 +166,50 @@ svg.has-sel .cnode.sel .sub { fill: rgba(28,28,28,.0); }
   .cnode text { font-size: 19px; }
   .cnode .sub { font-size: 13px; }
 }
+
+/* ---------- Impact tabs ---------- */
+.dtabs { display: flex; flex-wrap: wrap; gap: .55rem; margin-top: 2.6rem; }
+.dtabs__tab { font-family: var(--font-sans); font-weight: 600; font-size: .84rem;
+  padding: .5rem 1.05rem; border-radius: 999px; cursor: pointer;
+  background: transparent; color: var(--ink-soft); border: 1px solid #ccc;
+  transition: color .2s var(--ease), border-color .2s var(--ease), background .2s var(--ease); }
+.dtabs__tab:hover { border-color: var(--vu-gold-flat); color: var(--vu-oak); }
+.dtabs__tab.on { background: var(--vu-black); border-color: var(--vu-black); color: #fff; }
+.dpane { margin-top: 1.4rem; }
+.dpane .impact__tablewrap { margin-top: 0; }
+.dpane__empty { border: 1px dashed #c9c9c9; border-radius: var(--radius); padding: 3rem clamp(1.5rem, 5vw, 4rem);
+  text-align: center; }
+.dpane__empty .eyebrow { margin-bottom: .5rem; }
+.dpane__empty h3 { font-family: var(--font-serif); font-weight: 400; font-size: 1.5rem; }
+.dpane__empty p:last-child { color: var(--gray-mid); font-size: .92rem; margin-top: .6rem; }
+
+/* ---------- FY27 goals ---------- */
+.goals__owner { font-family: var(--font-condensed); font-weight: 700; font-size: .8rem;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--vu-oak); margin-bottom: 1.1rem; }
+.goal { border: 1px solid var(--line); border-radius: var(--radius); background: #fff;
+  padding: 1.6rem 1.7rem 1.5rem; margin-bottom: 1.3rem; }
+.goal__num { font-family: var(--font-condensed); font-weight: 700; font-size: 1rem;
+  letter-spacing: .1em; color: var(--vu-gold-flat); text-transform: uppercase; }
+.goal h3 { font-family: var(--font-serif); font-weight: 400; font-size: 1.45rem; margin-top: .3rem; }
+.goal__desc { color: var(--ink-soft); font-size: .93rem; margin-top: .5rem; max-width: 75ch; }
+.goal__scale { display: flex; margin-top: 1.7rem; position: relative; }
+.goal__scale::before { content: ''; position: absolute; top: 6px; left: 12.5%; right: 12.5%;
+  height: 2px; background: linear-gradient(90deg, var(--sand), var(--vu-gold-flat)); }
+.gms { flex: 1; display: flex; flex-direction: column; align-items: center; text-align: center;
+  position: relative; padding: 0 .4rem; }
+.gms__dot { width: 13px; height: 13px; border-radius: 50%; background: #fff;
+  border: 2.5px solid var(--vu-gold-flat); margin-bottom: .55rem; }
+.gms:last-child .gms__dot { background: var(--vu-gold-grad); }
+.gms b { font-family: var(--font-condensed); font-weight: 700; font-size: 1.5rem; line-height: 1.1; }
+.gms__label { font-family: var(--font-condensed); font-weight: 700; font-size: .68rem;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--gray-mid); margin-top: .2rem; }
+.gms__detail { font-size: .76rem; color: var(--gray-mid); margin-top: .2rem; }
+.goal__unit { text-align: center; font-size: .82rem; color: var(--ink-soft); margin-top: 1.1rem; }
+.goal__progress { display: inline-block; margin-top: 1rem; font-family: var(--font-condensed);
+  font-weight: 700; font-size: .68rem; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--gray-mid); border: 1px dashed #bbb; border-radius: 3px; padding: .22rem .6rem; }
+@media (max-width: 640px) {
+  .goal__scale { flex-wrap: wrap; gap: 1rem 0; }
+  .gms { flex: 1 1 50%; }
+  .goal__scale::before { display: none; }
+}

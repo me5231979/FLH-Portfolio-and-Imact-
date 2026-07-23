@@ -275,6 +275,37 @@ tbody.innerHTML = D.programs.map(p => {
     <td><span class="tstatus tstatus--${p.status}">${p.status.replace('-', ' ')}</span></td></tr>`;
 }).join('');
 
+/* ---------- impact tabs ---------- */
+document.querySelector('.dtabs').addEventListener('click', ev => {
+  const tab = ev.target.closest('.dtabs__tab');
+  if (!tab) return;
+  document.querySelectorAll('.dtabs__tab').forEach(t => {
+    const on = t === tab;
+    t.classList.toggle('on', on);
+    t.setAttribute('aria-selected', on);
+  });
+  document.querySelectorAll('.dpane').forEach(p => { p.hidden = p.id !== 'pane-' + tab.dataset.pane; });
+});
+
+/* ---------- FY27 goals ---------- */
+document.getElementById('goals-list').innerHTML = D.goals.map(g => `
+  <article class="goal">
+    <p class="goal__num">Goal 0${g.num}</p>
+    <h3>${esc(g.title)}</h3>
+    <p class="goal__desc">${esc(g.desc)}</p>
+    <div class="goal__scale" role="img" aria-label="Milestones, ${esc(g.unit)}: ${g.scale.map(m => m.label + ' ' + m.n).join(', ')}">
+      ${g.scale.map(m => `
+      <div class="gms">
+        <span class="gms__dot"></span>
+        <b>${esc(m.n)}</b>
+        <span class="gms__label">${esc(m.label)}</span>
+        ${m.detail ? `<span class="gms__detail">${esc(m.detail)}</span>` : ''}
+      </div>`).join('')}
+    </div>
+    <p class="goal__unit">${esc(g.unit)}</p>
+    <p class="goal__progress">Progress data coming</p>
+  </article>`).join('');
+
 /* ---------- hero weave ---------- */
 const weave = document.getElementById('hero-weave');
 const pts = [[80,520],[220,180],[420,420],[600,120],[790,380],[980,170],[1120,480],[300,600],[900,590],[600,320]];

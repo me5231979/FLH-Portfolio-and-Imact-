@@ -15,7 +15,7 @@
 <link rel="preload" href="assets/fonts/libre-caslon-display-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/styles.css?v=3">
-<link rel="stylesheet" href="flh.css?v=1">
+<link rel="stylesheet" href="flh.css?v=2">
 </head>
 <body>
 <a class="skip-link" href="#map">Skip to the constellation</a>
@@ -109,12 +109,33 @@
       <h2 class="h2" data-reveal>What the numbers <em>already say.</em></h2>
       <p class="lead" data-reveal>Measurement is still maturing across the portfolio. Where programs already report, the results speak clearly &mdash; nine in 10 employees on the talent platform, more than two thousand staff through live programming, and satisfaction averaging 4.7 of 5.</p>
       <div class="impact__cards" id="impact-cards"></div>
+      <div class="dtabs" role="tablist" aria-label="Impact views" data-reveal>
+        <button class="dtabs__tab on" data-pane="programs" role="tab" aria-selected="true">Programs</button>
+        <button class="dtabs__tab" data-pane="consumption" role="tab" aria-selected="false">Learner consumption</button>
+        <button class="dtabs__tab" data-pane="goals" role="tab" aria-selected="false">Goals</button>
+      </div>
+      <div class="dpane" id="pane-programs">
       <div class="impact__tablewrap" data-reveal>
         <table class="impact__table" id="impact-table">
           <caption class="sr-only">All fourteen FLH programs with reach, impact and status</caption>
           <thead><tr><th scope="col">Program</th><th scope="col">Serves</th><th scope="col">Reach</th><th scope="col">Impact</th><th scope="col">Status</th></tr></thead>
           <tbody></tbody>
         </table>
+      </div>
+      </div>
+
+      <div class="dpane" id="pane-consumption" hidden>
+        <div class="dpane__empty">
+          <p class="eyebrow">Learner consumption</p>
+          <h3>How Vanderbilt actually learns.</h3>
+          <p>Courses completed, hours logged and assets used across the portfolio will report here. Data coming.</p>
+        </div>
+      </div>
+
+      <div class="dpane" id="pane-goals" hidden>
+        <p class="goals__owner">People, Culture and Belonging &middot; FY27 performance goals</p>
+        <div id="goals-list"></div>
+        <p class="impact__note">Progress against each goal will populate here as the year unfolds.</p>
       </div>
       <p class="impact__note" data-reveal>Portfolio metrics are partial by design &mdash; this dashboard is built to be repopulated as each program&rsquo;s measurement comes online.</p>
     </div>
@@ -154,7 +175,7 @@
   </div>
 </footer>
 
-<script src="data.js?v=11"></script>
-<script src="app.js?v=8"></script>
+<script src="data.js?v=12"></script>
+<script src="app.js?v=9"></script>
 </body>
 </html>
