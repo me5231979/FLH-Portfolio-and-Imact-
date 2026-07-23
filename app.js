@@ -287,6 +287,16 @@ document.querySelector('.dtabs').addEventListener('click', ev => {
   document.querySelectorAll('.dpane').forEach(p => { p.hidden = p.id !== 'pane-' + tab.dataset.pane; });
 });
 
+/* ---------- product impact ---------- */
+document.querySelector('#products-table tbody').innerHTML = D.products_overseen.map(p => `
+  <tr>
+    <td><b>${esc(p.name)}</b></td>
+    <td><b>${p.users}</b> ${p.users === 1 ? 'user' : 'users'}</td>
+    <td>${esc(p.ai)}</td>
+    <td>${p.assets != null ? `<b>${p.assets.toLocaleString()}</b>` : '<span class="muted">Data coming</span>'}</td>
+    <td>${p.timeSaved != null ? `<b>${esc(p.timeSaved)}</b>` : '<span class="muted">Data coming</span>'}</td>
+  </tr>`).join('');
+
 /* ---------- FY27 goals ---------- */
 document.getElementById('goals-list').innerHTML = D.goals.map(g => `
   <article class="goal">

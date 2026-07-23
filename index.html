@@ -112,6 +112,7 @@
       <div class="dtabs" role="tablist" aria-label="Impact views" data-reveal>
         <button class="dtabs__tab on" data-pane="programs" role="tab" aria-selected="true">Programs</button>
         <button class="dtabs__tab" data-pane="consumption" role="tab" aria-selected="false">Learner consumption</button>
+        <button class="dtabs__tab" data-pane="products" role="tab" aria-selected="false">Product impact</button>
         <button class="dtabs__tab" data-pane="goals" role="tab" aria-selected="false">Goals</button>
       </div>
       <div class="dpane" id="pane-programs">
@@ -130,6 +131,18 @@
           <h3>How Vanderbilt actually learns.</h3>
           <p>Courses completed, hours logged and assets used across the portfolio will report here. Data coming.</p>
         </div>
+      </div>
+
+      <div class="dpane" id="pane-products" hidden>
+        <p class="goals__owner">Products overseen by Product Governance &amp; Oversight</p>
+        <div class="impact__tablewrap">
+          <table class="impact__table" id="products-table">
+            <caption class="sr-only">Governed products with users, AI enablement, assets generated and estimated time saved</caption>
+            <thead><tr><th scope="col">Product</th><th scope="col">People on it</th><th scope="col">AI-enabled</th><th scope="col">Assets generated</th><th scope="col">Estimated time saved</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <p class="impact__note">Six products, 21 licensed users. Assets generated and time saved will populate as product measurement comes online &mdash; 200 course assets are already tracked at the portfolio level.</p>
       </div>
 
       <div class="dpane" id="pane-goals" hidden>
@@ -175,7 +188,7 @@
   </div>
 </footer>
 
-<script src="data.js?v=12"></script>
-<script src="app.js?v=9"></script>
+<script src="data.js?v=13"></script>
+<script src="app.js?v=10"></script>
 </body>
 </html>

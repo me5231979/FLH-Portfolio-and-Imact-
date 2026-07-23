@@ -145,6 +145,17 @@ window.FLH = {
 ,
   /* FY27 performance goals — People, Culture and Belonging.
      Progress values arrive later; scale milestones are fixed. */
+  /* Products overseen by Product Governance & Oversight.
+     assets / timeSaved populate as measurement comes online. */
+  products_overseen: [
+    { name: 'Synthesia',       users: 6, ai: 'Yes',         assets: null, timeSaved: null },
+    { name: 'Articulate Rise', users: 7, ai: 'AI-assisted', assets: null, timeSaved: null },
+    { name: 'Yoodli',          users: 3, ai: 'Yes',         assets: null, timeSaved: null },
+    { name: 'SparkWise',       users: 3, ai: 'Yes',         assets: null, timeSaved: null },
+    { name: 'ChatThing',       users: 1, ai: 'Yes',         assets: null, timeSaved: null },
+    { name: 'Guidee',          users: 1, ai: 'Yes',         assets: null, timeSaved: null }
+  ],
+
   goals: [
     { num: 1,
       title: 'Create Vanderbilt Workforce Intelligence and Transfer Portal',
