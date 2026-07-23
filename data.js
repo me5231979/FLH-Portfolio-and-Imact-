@@ -97,7 +97,8 @@ window.FLH = {
       what: 'Non-degree certification programs funded through the tuition reimbursement benefit, run as cohorts in partnership with EdAssist.',
       who: 'All staff',
       value: 'Reduces cost and builds community by having staff move through certification programs together rather than solo.',
-      volume: { n: 926, label: 'participants' } },
+      volume: { n: 926, label: 'participants' },
+      stat: { n: '92.8%', label: 'employee retention among participants' } },
 
     { id: 'products', name: 'Product Governance & Oversight', stage: 'governance', audience: 'exec', partner: 'inhouse', status: 'live',
       what: 'Oversight and management of all the products FLH uses, delivers and subleases.',
