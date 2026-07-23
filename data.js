@@ -120,6 +120,7 @@ window.FLH = {
     { a: 'lr',        b: 'coaching',    why: 'Three personalized coaching sessions are built into LR — the coaching practice extends that model to all staff.' },
     { a: 'chart',     b: 'summit',      why: 'CHART’s manager workstream translates AI exposure into the workforce actions Summit operationalizes.' },
     { a: 'chart',     b: 'navigators',  why: 'CHART’s workshop series is a delivery lane for the trained facilitator network.' },
+    { a: 'chart',     b: 'voyage',      why: 'CHART’s manager workstream feeds Manager Voyage — AI fluency becomes part of the management baseline.' },
     { a: 'navigators',b: 'anchors',     why: 'Navigators-trained facilitators extend FLH’s reach through recurring sessions like Anchors Edge.' },
     { a: 'navigators',b: 'voyage',      why: 'Certified Navigators facilitate Vanderbilt Voyage programming — the facilitator bench powers the manager program.' },
     { a: 'speak',     b: 'cohort',      why: 'Both run on the EdAssist partnership — one benefit infrastructure, two doors.' },
