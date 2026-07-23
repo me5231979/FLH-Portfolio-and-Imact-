@@ -51,7 +51,9 @@ window.FLH = {
     { id: 'speak', name: 'SPEAK', stage: 'foundations', audience: 'targeted', partner: 'edassist', status: 'live',
       what: 'Language literacy program powered via EdAssist.',
       who: 'Staff with low English proficiency, ESL or who do not speak English',
-      value: 'Removes language barriers to participation and advancement, widening the growth path for underserved staff.' },
+      value: 'Removes language barriers to participation and advancement, widening the growth path for underserved staff.',
+      volume: { n: 9, label: 'staff enrolled' },
+      stat: { n: '9', label: 'completed' } },
 
     { id: 'anchors', name: 'Anchors Edge', stage: 'foundations', audience: 'all', partner: 'inhouse', status: 'live',
       what: 'Weekly all-staff virtual lunch-and-learn series.',
