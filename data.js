@@ -158,7 +158,7 @@ window.FLH = {
     { name: 'ChatThing',       users: 1, ai: 'Yes',         assets: '5 chat agents built',
       timeSaved: '≈ 90 hr',  formula: '5 agents × (20 hr − 2 hr) per agent' },
     { name: 'Yoodli',          users: 3, ai: 'Yes',         assets: '4 interactive scenarios built',
-      timeSaved: '≈ 64 hr',  formula: '4 scenarios × (20 hr − 4 hr) per scenario' },
+      timeSaved: '≈ 77 hr',  formula: '4 scenarios × (20 hr − 45 min) per scenario' },
     { name: 'SparkWise',       users: 3, ai: 'Yes',         assets: '5 courses delivered',
       timeSaved: '≈ 50 hr',  formula: '5 deliveries × (12 hr − 2 hr) per delivery' },
     { name: 'Guidee',          users: 1, ai: 'Yes',         assets: 'In development',
