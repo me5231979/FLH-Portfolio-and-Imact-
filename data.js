@@ -151,61 +151,62 @@ window.FLH = {
   /* 2025 learner consumption — one row per item consumption in the LMS.
      Themes are keyword-classified; SBJA figures count items whose names match
      a named skill in the 4,410-skill Skills Library. */
-  /* 2025 learning activity. A "course taken" = one enrollment recorded in the
-     LMS. The export covers everyone trained on campus — staff, student leaders
-     and affiliates — and carries no person identifier, so counts are
-     enrollments, not unique people. Themes and competency alignment are
-     keyword-classified from item names. */
+  /* 2025 learning activity. A "course taken" = one enrollment marked
+     Completed or In Progress in the LMS — Not Started, No Active Offering,
+     withdrawn and bypassed records are excluded. The export covers everyone
+     trained on campus (staff, student leaders, affiliates) and carries no
+     person identifier, so counts are takes, not unique people. Themes and
+     competency alignment are keyword-classified from item names. */
   consumption: {
     year: 2025,
-    total: 318530,
-    uniqueItems: 3136,
-    sbja: { items: 808, consumptions: 43558 },
-    coreAligned: 114032,
+    total: 196466,
+    uniqueItems: 2576,
+    sbja: { items: 668, consumptions: 34366 },
+    coreAligned: 44860,
     themes: [
-      { theme: 'Compliance & safety', n: 192090, share: 60, program: 'Compliance',
-        top: 'Active Assailant Training · Protection of Minors · lab and workplace safety' },
-      { theme: 'Personal & professional growth', n: 33390, share: 10, program: 'Anchors Edge',
-        top: 'Invest in You · Communicating with Transparency · TED talks on listening' },
-      { theme: 'Enterprise systems', n: 31484, share: 10, program: 'Summit · Talent Marketplace (Oracle backbone)',
+      { theme: 'Compliance & safety', n: 135986, share: 69, program: 'Compliance',
+        top: 'Protection of Minors · Active Assailant Training · lab and workplace safety' },
+      { theme: 'Role & department specific', n: 22890, share: 12, program: '',
+        top: 'Student-org and finance START training · departmental onboarding · trade modules' },
+      { theme: 'Enterprise systems', n: 18724, share: 10, program: 'Summit · Talent Marketplace (Oracle backbone)',
         top: 'UKG timecards · Oracle Cloud Expenses · Vanderbilt One Card' },
-      { theme: 'Role & department specific', n: 31226, share: 10, program: '',
-        top: 'Student-org leader training · departmental onboarding · trade-specific modules' },
-      { theme: 'AI fluency', n: 11374, share: 4, program: 'CHART',
-        top: 'Using AI to Boost Your Creative Potential · VU AI Policy · ChatGPT 101 and 102' },
-      { theme: 'Career & talent marketplace', n: 10186, share: 3, program: 'Talent Marketplace · Summit',
+      { theme: 'Personal & professional growth', n: 8840, share: 5, program: 'Anchors Edge',
+        top: 'Communicating with Transparency · listening skills · Invest in You' },
+      { theme: 'Leadership & management', n: 4960, share: 3, program: 'Manager Voyage · Leadership Redefined',
+        top: 'Be the Manager People Won\u2019t Leave · student leader training · coaching' },
+      { theme: 'Career & talent marketplace', n: 2918, share: 1, program: 'Talent Marketplace · Summit',
         top: 'Navigate: Using the Talent Marketplace · LinkedIn profile and resume courses' },
-      { theme: 'Leadership & management', n: 8780, share: 3, program: 'Manager Voyage · Leadership Redefined',
-        top: 'Be the Manager People Won\u2019t Leave · HRVU New Leader Orientation · delegation and coaching' }
+      { theme: 'AI fluency', n: 2148, share: 1, program: 'CHART',
+        top: 'Using AI to Boost Your Creative Potential · VU AI Policy · ChatGPT 101 and 102' }
     ],
     topSkills: [
-      { skill: 'Oracle Cloud', cat: 'Technology Use, Monitoring and Control', n: 7466 },
-      { skill: 'Procurement', cat: 'Supply Chain Management', n: 7072 },
-      { skill: 'Compliance Training', cat: 'Legal, Regulation and Compliance', n: 3628 },
-      { skill: 'First Aid', cat: 'Healthcare', n: 2516 },
-      { skill: 'Bloodborne Pathogens', cat: 'Healthcare', n: 1996 },
-      { skill: 'Safety Training', cat: 'Legal, Regulation and Compliance', n: 1672 },
-      { skill: 'Arc Flash', cat: 'Engineering Design and Development', n: 1620 },
-      { skill: 'Fire Safety', cat: 'Administrative Services', n: 1202 },
-      { skill: 'Hygiene', cat: 'Healthcare', n: 1184 },
-      { skill: 'Fire Prevention', cat: 'Administrative Services', n: 1178 },
-      { skill: 'Laboratory Safety', cat: 'Research and Development', n: 1132 },
-      { skill: 'Injury Prevention', cat: 'Legal, Regulation and Compliance', n: 992 }
+      { skill: 'Procurement', cat: 'Supply Chain Management', n: 6944 },
+      { skill: 'Oracle Cloud', cat: 'Technology Use, Monitoring and Control', n: 6410 },
+      { skill: 'Compliance Training', cat: 'Legal, Regulation and Compliance', n: 2788 },
+      { skill: 'First Aid', cat: 'Healthcare', n: 1726 },
+      { skill: 'Safety Training', cat: 'Legal, Regulation and Compliance', n: 1628 },
+      { skill: 'Hygiene', cat: 'Healthcare', n: 1170 },
+      { skill: 'Laboratory Safety', cat: 'Research and Development', n: 1122 },
+      { skill: 'Bloodborne Pathogens', cat: 'Healthcare', n: 1038 },
+      { skill: 'Arc Flash', cat: 'Engineering Design and Development', n: 788 },
+      { skill: 'Laser Safety', cat: 'Legal, Regulation and Compliance', n: 722 },
+      { skill: 'Fire Prevention', cat: 'Administrative Services', n: 640 },
+      { skill: 'Workplace Safety', cat: 'Legal, Regulation and Compliance', n: 626 }
     ],
     core: [
-      { name: 'Radically collaborates and cultivates belonging', n: 37466,
-        top: 'Communicating with Transparency · Psychological Safety · listening skills' },
-      { name: 'Embodies an entrepreneurial spirit and leverages data and technology', n: 34580,
+      { name: 'Embodies an entrepreneurial spirit and leverages data and technology', n: 12622,
         top: 'UKG and Oracle systems · Using AI to Boost Your Creative Potential' },
-      { name: 'Grows self and others', n: 21510,
-        top: 'Navigate: Using the Talent Marketplace · Invest in You · coaching' },
-      { name: 'Makes effective and ethical decisions for the University', n: 9916,
+      { name: 'Radically collaborates and cultivates belonging', n: 11792,
+        top: 'Communicating with Transparency · Psychological Safety · listening skills' },
+      { name: 'Makes effective and ethical decisions for the University', n: 9118,
         top: 'Institutional Neutrality Essentials · Conflict of Interest training' },
-      { name: 'Leads and inspires teams', n: 8800,
+      { name: 'Grows self and others', n: 5072,
+        top: 'Navigate: Using the Talent Marketplace · Invest in You · coaching' },
+      { name: 'Leads and inspires teams', n: 4886,
         top: 'Be the Manager People Won\u2019t Leave · HRVU New Leader Orientation' },
-      { name: 'Develops and implements University strategy', n: 1040,
-        top: 'Event planning · crisis management' },
-      { name: 'Continuously strives for excellence', n: 720,
+      { name: 'Develops and implements University strategy', n: 822,
+        top: 'Event planning · strategic decision-making' },
+      { name: 'Continuously strives for excellence', n: 548,
         top: 'Customer service · time management' }
     ]
   },
