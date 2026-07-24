@@ -268,7 +268,9 @@ function programCards() {
 const CARD_SETS = {
   consumption: [
     { eyebrow: '2025 staff learning', title: 'Course completions', big: '18,527', cap: 'about four per staff member across 4,600 staff' },
-    { eyebrow: '2025 staff learning', title: 'Courses taken', big: '1,559', cap: 'distinct courses, with year and section variants deduped' }
+    { eyebrow: '2025 staff learning', title: 'Courses taken', big: '1,559', cap: 'distinct courses, with year and section variants deduped' },
+    { eyebrow: '2025 staff learning', title: 'Courses tied to AI', big: '85', cap: 'from ChatGPT 101 to AI policy to prompt engineering' },
+    { eyebrow: '2025 staff learning', title: 'Tied to the 7 core skills', big: '516', cap: 'courses aligning to Vanderbilt\u2019s core competencies' }
   ],
   products: [
     { eyebrow: 'Product portfolio', title: 'Products governed', big: '6', cap: 'Synthesia, Rise, Yoodli, SparkWise, ChatThing and Guidee' },
