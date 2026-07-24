@@ -6,8 +6,8 @@ as a system: fourteen programs, one purpose — growth.
 - **The constellation** — an interactive map of all 14 FLH programs and the 22 real
   hand-offs between them (shared platforms, graduate flows, removed barriers). Select a
   program to trace what it feeds and what feeds it; hover any line to see why it exists.
-  Lenses regroup the portfolio by lifecycle stage, audience, or delivery partner.
-- **The through-line** — the portfolio read as one career across five stages:
+  Lenses regroup the portfolio by area of focus, audience, or delivery partner.
+- **The through-line** — the portfolio read as one career across five areas of focus:
   Foundations → Capability → Mobility → Leadership → Governance.
 - **The impact** — reach and NPS where measured (Anchors Edge, Leadership Redefined,
   LR Alumni, Manager Voyage), with explicit "data coming" states elsewhere.
