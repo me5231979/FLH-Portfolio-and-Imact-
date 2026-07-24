@@ -151,30 +151,31 @@ window.FLH = {
   /* 2025 learner consumption — one row per item consumption in the LMS.
      Themes are keyword-classified; SBJA figures count items whose names match
      a named skill in the 4,410-skill Skills Library. */
-  /* 2025 learning activity. A "course taken" = one enrollment marked
-     Completed or In Progress in the LMS — Not Started, No Active Offering,
-     withdrawn and bypassed records are excluded. The export covers everyone
-     trained on campus (staff, student leaders, affiliates) and carries no
-     person identifier, so counts are takes, not unique people. Themes and
-     competency alignment are keyword-classified from item names. */
+  /* 2025 learning activity, staff-focused. A "course taken" = one enrollment
+     marked Completed or In Progress. Excluded: Not Started / No Active
+     Offering / withdrawn / bypassed records; student-audience content
+     (Greek Life, student-org training, Dean of Students items — 15,100
+     takes); and Protection of Minors / background-clearance training, which
+     spans staff, students and volunteers (34,078 takes). The export has no
+     person identifier, so counts are takes, not unique people. */
   consumption: {
     year: 2025,
-    total: 196466,
-    uniqueItems: 2576,
-    sbja: { items: 668, consumptions: 34366 },
-    coreAligned: 44860,
+    total: 147288,
+    uniqueItems: 2535,
+    sbja: { items: 665, consumptions: 33982 },
+    coreAligned: 43402,
     themes: [
-      { theme: 'Compliance & safety', n: 135986, share: 69, program: 'Compliance',
-        top: 'Protection of Minors · Active Assailant Training · lab and workplace safety' },
-      { theme: 'Role & department specific', n: 22890, share: 12, program: '',
-        top: 'Student-org and finance START training · departmental onboarding · trade modules' },
-      { theme: 'Enterprise systems', n: 18724, share: 10, program: 'Summit · Talent Marketplace (Oracle backbone)',
+      { theme: 'Compliance & safety', n: 93522, share: 64, program: 'Compliance',
+        top: 'Active Assailant Training · lab and workplace safety · FERPA' },
+      { theme: 'Enterprise systems', n: 18476, share: 13, program: 'Summit · Talent Marketplace (Oracle backbone)',
         top: 'UKG timecards · Oracle Cloud Expenses · Vanderbilt One Card' },
-      { theme: 'Personal & professional growth', n: 8840, share: 5, program: 'Anchors Edge',
+      { theme: 'Role & department specific', n: 17814, share: 12, program: '',
+        top: 'Regulated medical waste shipping · lab-specific chemical modules · departmental tools' },
+      { theme: 'Personal & professional growth', n: 8322, share: 6, program: 'Anchors Edge',
         top: 'Communicating with Transparency · listening skills · Invest in You' },
-      { theme: 'Leadership & management', n: 4960, share: 3, program: 'Manager Voyage · Leadership Redefined',
-        top: 'Be the Manager People Won\u2019t Leave · student leader training · coaching' },
-      { theme: 'Career & talent marketplace', n: 2918, share: 1, program: 'Talent Marketplace · Summit',
+      { theme: 'Leadership & management', n: 4088, share: 3, program: 'Manager Voyage · Leadership Redefined',
+        top: 'Be the Manager People Won\u2019t Leave · coaching · delegating' },
+      { theme: 'Career & talent marketplace', n: 2918, share: 2, program: 'Talent Marketplace · Summit',
         top: 'Navigate: Using the Talent Marketplace · LinkedIn profile and resume courses' },
       { theme: 'AI fluency', n: 2148, share: 1, program: 'CHART',
         top: 'Using AI to Boost Your Creative Potential · VU AI Policy · ChatGPT 101 and 102' }
@@ -182,7 +183,7 @@ window.FLH = {
     topSkills: [
       { skill: 'Procurement', cat: 'Supply Chain Management', n: 6944 },
       { skill: 'Oracle Cloud', cat: 'Technology Use, Monitoring and Control', n: 6410 },
-      { skill: 'Compliance Training', cat: 'Legal, Regulation and Compliance', n: 2788 },
+      { skill: 'Compliance Training', cat: 'Legal, Regulation and Compliance', n: 2772 },
       { skill: 'First Aid', cat: 'Healthcare', n: 1726 },
       { skill: 'Safety Training', cat: 'Legal, Regulation and Compliance', n: 1628 },
       { skill: 'Hygiene', cat: 'Healthcare', n: 1170 },
@@ -202,11 +203,11 @@ window.FLH = {
         top: 'Institutional Neutrality Essentials · Conflict of Interest training' },
       { name: 'Grows self and others', n: 5072,
         top: 'Navigate: Using the Talent Marketplace · Invest in You · coaching' },
-      { name: 'Leads and inspires teams', n: 4886,
-        top: 'Be the Manager People Won\u2019t Leave · HRVU New Leader Orientation' },
-      { name: 'Develops and implements University strategy', n: 822,
-        top: 'Event planning · strategic decision-making' },
-      { name: 'Continuously strives for excellence', n: 548,
+      { name: 'Leads and inspires teams', n: 4014,
+        top: 'Be the Manager People Won\u2019t Leave · Delegating Tasks' },
+      { name: 'Develops and implements University strategy', n: 454,
+        top: 'Strategic decision-making · crisis management' },
+      { name: 'Continuously strives for excellence', n: 330,
         top: 'Customer service · time management' }
     ]
   },
