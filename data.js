@@ -161,7 +161,7 @@ window.FLH = {
   consumption: {
     year: 2025,
     total: 147288,
-    uniqueItems: 2535,
+    uniqueItems: 2471,   /* distinct courses after deduping title variants (2,535 raw titles) */
     sbja: { items: 665, consumptions: 33982 },
     coreAligned: 43402,
     themes: [

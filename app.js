@@ -267,8 +267,8 @@ function programCards() {
 }
 const CARD_SETS = {
   consumption: [
-    { eyebrow: '2025 staff learning', title: 'Courses taken', big: '147,288', cap: 'completed or in progress — about 33 per staff member' },
-    { eyebrow: '2025 staff learning', title: 'Unique learning items', big: '2,535', cap: 'from compliance modules to TED talks' },
+    { eyebrow: '2025 staff learning', title: 'Course completions', big: '147,288', cap: 'completed or in progress — about 33 per staff member' },
+    { eyebrow: '2025 staff learning', title: 'Courses taken', big: '2,471', cap: 'distinct courses, with year and section variants deduped' },
     { eyebrow: '2025 staff learning', title: 'Compliance &amp; safety', big: '64%', cap: 'of all courses taken keep the workforce current and safe' },
     { eyebrow: '2025 staff learning', title: 'Core-competency aligned', big: '29%', cap: '43,402 courses taken map to the seven core competencies' }
   ],
