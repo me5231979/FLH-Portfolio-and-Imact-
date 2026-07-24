@@ -3,7 +3,7 @@
 A standalone single-page dashboard that makes the Futures Learning Hub portfolio visible
 as a system: all programs, one purpose — growth.
 
-- **The constellation** — an interactive map of all 14 FLH programs and the 22 real
+- **The constellation** — an interactive map of all 13 FLH programs and the 20 real
   hand-offs between them (shared platforms, graduate flows, removed barriers). Select a
   program to trace what it feeds and what feeds it; hover any line to see why it exists.
   Lenses regroup the portfolio by area of focus, audience, or delivery partner.
@@ -12,7 +12,7 @@ as a system: all programs, one purpose — growth.
 - **The impact** — reach and NPS where measured (Anchors Edge, Leadership Redefined,
   LR Alumni, Manager Voyage), with explicit "data coming" states elsewhere.
 
-Programs are deep-linkable: `#p=summit`, `#p=chart`, etc.
+Programs are deep-linkable: `#p=transfer`, `#p=chart`, etc.
 
 ## Data
 

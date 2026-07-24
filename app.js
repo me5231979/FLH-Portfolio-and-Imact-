@@ -23,8 +23,7 @@ const POS = {
   chart:       { x: 575, y: 120, r: 22 },
   cohort:      { x: 800, y: 155, r: 18 },
   coaching:    { x: 985, y: 245, r: 18 },
-  marketplace: { x: 1065, y: 430, r: 22 },
-  summit:      { x: 985, y: 615, r: 22 },
+  transfer:    { x: 1035, y: 510, r: 26 },
   voyage:      { x: 800, y: 730, r: 20 },
   lr:          { x: 575, y: 765, r: 30 },
   alumni:      { x: 350, y: 715, r: 18 },
@@ -248,7 +247,7 @@ flow.addEventListener('click', ev => {
 /* ---------- impact ---------- */
 const cards = document.getElementById('impact-cards');
 const featured = [
-  { id: 'marketplace', stat: '90%', cap: '3,982 of 4,440 employees using the talent platform' },
+  { id: 'transfer', stat: '90%', cap: '3,982 of 4,440 employees using the platform' },
   { id: 'anchors', stat: '1,000', cap: 'employees registered for at least one session' },
   { id: 'lr',      stat: '113',   cap: 'M1&ndash;E1 leaders through the full program' },
   { id: 'alumni',  stat: '4.75',  cap: 'NPS from the graduate community', isNps: true }
