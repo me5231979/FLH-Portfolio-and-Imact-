@@ -267,10 +267,8 @@ function programCards() {
 }
 const CARD_SETS = {
   consumption: [
-    { eyebrow: '2025 staff learning', title: 'Course completions', big: '22,696', cap: 'completed or in progress — about five per staff member' },
-    { eyebrow: '2025 staff learning', title: 'Courses taken', big: '1,559', cap: 'distinct courses, with year and section variants deduped' },
-    { eyebrow: '2025 staff learning', title: 'Compliance &amp; safety', big: '55%', cap: 'of all courses taken keep the workforce current and safe' },
-    { eyebrow: '2025 staff learning', title: 'Core-competency aligned', big: '40%', cap: '8,985 courses taken map to the seven core competencies' }
+    { eyebrow: '2025 staff learning', title: 'Course completions', big: '18,527', cap: 'about four per staff member across 4,600 staff' },
+    { eyebrow: '2025 staff learning', title: 'Courses taken', big: '1,559', cap: 'distinct courses, with year and section variants deduped' }
   ],
   products: [
     { eyebrow: 'Product portfolio', title: 'Products governed', big: '6', cap: 'Synthesia, Rise, Yoodli, SparkWise, ChatThing and Guidee' },
