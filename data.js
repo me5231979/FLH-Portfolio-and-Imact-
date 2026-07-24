@@ -151,13 +151,14 @@ window.FLH = {
   /* 2025 learner consumption — one row per item consumption in the LMS.
      Themes are keyword-classified; SBJA figures count items whose names match
      a named skill in the 4,410-skill Skills Library. */
-  /* 2025 learning activity. A "course taken" = one person enrolling in one
-     course once; annual compliance modules mean most staff take dozens a year.
-     Themes and competency alignment are keyword-classified from item names. */
+  /* 2025 learning activity. A "course taken" = one enrollment recorded in the
+     LMS. The export covers everyone trained on campus — staff, student leaders
+     and affiliates — and carries no person identifier, so counts are
+     enrollments, not unique people. Themes and competency alignment are
+     keyword-classified from item names. */
   consumption: {
     year: 2025,
     total: 318530,
-    perStaff: 72,
     uniqueItems: 3136,
     sbja: { items: 808, consumptions: 43558 },
     coreAligned: 114032,
