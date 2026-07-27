@@ -247,8 +247,8 @@ window.FLH = {
       kpis: [
         { label: 'Managers completing the Manager Standard survey', target: '80% of managers', pct: null },
         { label: 'Mandatory manager compliance trainings completed', target: '80% of managers', pct: null },
-        { label: 'Managers auto-enrolled in the Manager Standard web course', target: '80% of managers', pct: null },
-        { label: 'Manager cohort offered across business units, new managers auto-enrolled', target: '80% of managers', pct: null }
+        { label: 'Managers auto-enrolled in the Manager Standard web course', target: '100% of managers', pct: null },
+        { label: 'Manager cohort offered across business units, new managers auto-enrolled', target: '100% of new managers', pct: null }
       ],
       scale: [
         { label: 'Base value', n: '15%', detail: '' },
@@ -262,7 +262,7 @@ window.FLH = {
       unit: 'of managers or teams assessed, with actions implemented',
       measure: 'An immersive AI experience for every manager, built on the skills-based job architecture and AI-enabled talent systems, with Oracle as the system of record; completion is monitored and reported.',
       kpis: [
-        { label: 'Managers enrolled in the immersive AI experience', target: '25% of managers or teams', pct: null },
+        { label: 'Managers enrolled in the immersive AI experience', target: '100% of managers', pct: null },
         { label: 'Immersive AI experience completed', target: '25% of managers or teams', pct: null },
         { label: 'Teams assessed for AI-exposed work, with actions implemented', target: '25% of managers or teams', pct: null }
       ],
