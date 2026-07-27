@@ -231,7 +231,7 @@ window.FLH = {
       kpis: [
         { label: 'Critical roles identified in each business unit', target: '85% — 33 of 39 business units', pct: null },
         { label: 'Of the identified critical roles, a talent assessment is completed — a 9-box or similar succession tool in Oracle', target: '85% — 33 of 39 business units', pct: null },
-        { label: 'Staff reached on the Skill Matrix platform, engagement monitored', target: '85% — 33 of 39 business units', pct: null }
+        { label: 'All staff informed of and enrolled into the Skill Matrix platform, engagement monitored', target: '100% of staff', pct: null }
       ],
       scale: [
         { label: 'Base value', n: '6%',  detail: '2 of 39 business units' },
