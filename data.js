@@ -227,6 +227,12 @@ window.FLH = {
       title: 'Create Vanderbilt Workforce Intelligence and Transfer Portal',
       desc: 'By Q4, launch an AI-enabled system that helps leaders see talent needs, retain top talent, strengthen succession and connect employees to internal opportunities across the university.',
       unit: 'of business units live on the system',
+      measure: 'Engagement Consultants work all 39 business units to identify critical roles; talent is assessed against validated skills from the skills-based job architecture; Oracle is the system of record and the Skill Matrix platform carries all-staff communication.',
+      kpis: [
+        { label: 'Business units with critical roles identified', target: '39 of 39 BUs', pct: null },
+        { label: 'Critical roles with talent assessed — 9-box against validated skills', target: '100% of critical roles', pct: null },
+        { label: 'Staff reached on the Skill Matrix platform, engagement monitored', target: 'all staff', pct: null }
+      ],
       scale: [
         { label: 'Base value', n: '6%',  detail: '2 of 39 business units' },
         { label: 'Threshold',  n: '50%', detail: '20 of 39' },
@@ -237,6 +243,13 @@ window.FLH = {
       title: 'Increase manager effectiveness, measurable at scale',
       desc: 'By Q4, implement a Vanderbilt manager standard that measures demonstrated leader behavior.',
       unit: 'of managers meeting or aligned to the standard',
+      measure: 'A research-based Vanderbilt Manager Standard built with DSA and VUIT; a five-question survey of all managers establishes the behavior baseline; Oracle tracks enrollment and completion.',
+      kpis: [
+        { label: 'Managers completing the Manager Standard survey', target: '100% of managers', pct: null },
+        { label: 'Mandatory manager compliance trainings completed', target: '100%', pct: null },
+        { label: 'Managers auto-enrolled in the Manager Standard web course', target: '100%', pct: null },
+        { label: 'Manager cohort offered across business units, new managers auto-enrolled', target: 'all 39 BUs', pct: null }
+      ],
       scale: [
         { label: 'Base value', n: '15%', detail: '' },
         { label: 'Threshold',  n: '50%', detail: '' },
@@ -247,6 +260,12 @@ window.FLH = {
       title: 'Build workforce readiness for AI-enabled work',
       desc: 'By Q4, equip managers to identify AI-exposed work, critical skills and emerging talent needs on their teams, and translate those insights into practical workforce actions.',
       unit: 'of managers or teams assessed, with actions implemented',
+      measure: 'An immersive AI experience for every manager, built on the skills-based job architecture and AI-enabled talent systems, with Oracle as the system of record; completion is monitored and reported.',
+      kpis: [
+        { label: 'Managers enrolled in the immersive AI experience', target: '100% of managers', pct: null },
+        { label: 'Immersive AI experience completed', target: 'monitored and reported quarterly', pct: null },
+        { label: 'Teams assessed for AI-exposed work, with actions implemented', target: '40% at reach', pct: null }
+      ],
       scale: [
         { label: 'Base value', n: '15%', detail: '' },
         { label: 'Threshold',  n: '15%', detail: '' },

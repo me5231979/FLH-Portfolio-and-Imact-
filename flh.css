@@ -217,3 +217,17 @@ svg.has-sel .cnode.sel .sub { fill: rgba(28,28,28,.0); }
 /* consumption share bars */
 .sharebar { width: 90px; height: 6px; border-radius: 3px; background: var(--cream); overflow: hidden; margin-bottom: .3rem; }
 .sharebar i { display: block; height: 100%; background: var(--vu-gold-grad); border-radius: 3px; }
+
+/* goal measurement KPIs */
+.goal__how { font-family: var(--font-condensed); font-weight: 700; font-size: .72rem;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--vu-oak); margin-top: 1.6rem; }
+.goal__method { color: var(--ink-soft); font-size: .88rem; margin-top: .4rem; max-width: 80ch; }
+.goal__kpis { margin-top: 1rem; display: grid; gap: .65rem; }
+.kpi { display: grid; grid-template-columns: minmax(0, 1fr) 160px minmax(0, 1fr); gap: 1rem; align-items: center; }
+.kpi__label { font-size: .84rem; color: var(--vu-black); }
+.kpi__bar { height: 7px; border-radius: 4px; background: var(--cream); overflow: hidden; }
+.kpi__bar--empty { background: transparent; border: 1px dashed #c9c9c9; }
+.kpi__bar i { display: block; height: 100%; background: var(--vu-gold-grad); border-radius: 4px; }
+.kpi__val { font-size: .78rem; color: var(--gray-mid); }
+.kpi__val em { font-style: normal; color: var(--vu-oak); }
+@media (max-width: 720px) { .kpi { grid-template-columns: 1fr; gap: .25rem; } }

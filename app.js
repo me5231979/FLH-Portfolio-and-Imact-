@@ -368,7 +368,16 @@ document.getElementById('goals-list').innerHTML = D.goals.map(g => `
       </div>`).join('')}
     </div>
     <p class="goal__unit">${esc(g.unit)}</p>
-    <p class="goal__progress">Progress data coming</p>
+    <p class="plabel goal__how">How we measure it</p>
+    <p class="goal__method">${esc(g.measure)}</p>
+    <div class="goal__kpis">
+      ${g.kpis.map(k => `
+      <div class="kpi">
+        <span class="kpi__label">${esc(k.label)}</span>
+        <div class="kpi__bar${k.pct == null ? ' kpi__bar--empty' : ''}">${k.pct != null ? `<i style="width:${k.pct}%"></i>` : ''}</div>
+        <span class="kpi__val">${k.pct != null ? k.pct + '%' : 'awaiting baseline'} <em>&middot; target: ${esc(k.target)}</em></span>
+      </div>`).join('')}
+    </div>
   </article>`).join('');
 
 /* ---------- hero weave ---------- */
