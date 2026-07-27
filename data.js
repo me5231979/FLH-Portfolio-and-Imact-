@@ -229,7 +229,7 @@ window.FLH = {
       unit: 'of business units live on the system',
       measure: 'Engagement Consultants work all 39 business units to identify critical roles; talent is assessed against validated skills from the skills-based job architecture; Oracle is the system of record and the Skill Matrix platform carries all-staff communication.',
       kpis: [
-        { label: 'Business units with critical roles identified', target: '39 of 39 BUs', pct: null },
+        { label: 'Critical roles identified in each business unit', target: 'all 39 BUs', pct: null },
         { label: 'Critical roles with talent assessed — 9-box against validated skills', target: '100% of critical roles', pct: null },
         { label: 'Staff reached on the Skill Matrix platform, engagement monitored', target: 'all staff', pct: null }
       ],
