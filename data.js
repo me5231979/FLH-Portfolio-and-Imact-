@@ -229,9 +229,9 @@ window.FLH = {
       unit: 'of business units live on the system',
       measure: 'Engagement Consultants work all 39 business units to identify critical roles; talent is assessed against validated skills from the skills-based job architecture; Oracle is the system of record and the Skill Matrix platform carries all-staff communication.',
       kpis: [
-        { label: 'Critical roles identified in each business unit', target: 'all 39 BUs', pct: null },
-        { label: 'Of the identified critical roles, a talent assessment is completed — a 9-box or similar succession tool in Oracle', target: '100% of critical roles', pct: null },
-        { label: 'Staff reached on the Skill Matrix platform, engagement monitored', target: 'all staff', pct: null }
+        { label: 'Critical roles identified in each business unit', target: '85% — 33 of 39 business units', pct: null },
+        { label: 'Of the identified critical roles, a talent assessment is completed — a 9-box or similar succession tool in Oracle', target: '85% — 33 of 39 business units', pct: null },
+        { label: 'Staff reached on the Skill Matrix platform, engagement monitored', target: '85% — 33 of 39 business units', pct: null }
       ],
       scale: [
         { label: 'Base value', n: '6%',  detail: '2 of 39 business units' },
@@ -245,10 +245,10 @@ window.FLH = {
       unit: 'of managers meeting or aligned to the standard',
       measure: 'A research-based Vanderbilt Manager Standard built with DSA and VUIT; a five-question survey of all managers establishes the behavior baseline; Oracle tracks enrollment and completion.',
       kpis: [
-        { label: 'Managers completing the Manager Standard survey', target: '100% of managers', pct: null },
-        { label: 'Mandatory manager compliance trainings completed', target: '100%', pct: null },
-        { label: 'Managers auto-enrolled in the Manager Standard web course', target: '100%', pct: null },
-        { label: 'Manager cohort offered across business units, new managers auto-enrolled', target: 'all 39 BUs', pct: null }
+        { label: 'Managers completing the Manager Standard survey', target: '80% of managers', pct: null },
+        { label: 'Mandatory manager compliance trainings completed', target: '80% of managers', pct: null },
+        { label: 'Managers auto-enrolled in the Manager Standard web course', target: '80% of managers', pct: null },
+        { label: 'Manager cohort offered across business units, new managers auto-enrolled', target: '80% of managers', pct: null }
       ],
       scale: [
         { label: 'Base value', n: '15%', detail: '' },
@@ -262,9 +262,9 @@ window.FLH = {
       unit: 'of managers or teams assessed, with actions implemented',
       measure: 'An immersive AI experience for every manager, built on the skills-based job architecture and AI-enabled talent systems, with Oracle as the system of record; completion is monitored and reported.',
       kpis: [
-        { label: 'Managers enrolled in the immersive AI experience', target: '100% of managers', pct: null },
-        { label: 'Immersive AI experience completed', target: 'monitored and reported quarterly', pct: null },
-        { label: 'Teams assessed for AI-exposed work, with actions implemented', target: '40% at reach', pct: null }
+        { label: 'Managers enrolled in the immersive AI experience', target: '25% of managers or teams', pct: null },
+        { label: 'Immersive AI experience completed', target: '25% of managers or teams', pct: null },
+        { label: 'Teams assessed for AI-exposed work, with actions implemented', target: '25% of managers or teams', pct: null }
       ],
       scale: [
         { label: 'Base value', n: '15%', detail: '' },
