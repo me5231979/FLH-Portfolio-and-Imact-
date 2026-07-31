@@ -27,12 +27,13 @@ done < work/urls.txt
 FPS=24
 for i in $(seq -w 1 14); do
   dur=10.0; [ "$i" = "14" ] && dur=12.0
+  vol=1.0; [ "$i" = "10" ] && vol=0.35   # b10 carries faint speech; duck it
   src="work/blocks/b$i.mp4"; dst="work/norm/n$i.mp4"
   [ -s "$dst" ] && continue
   ffmpeg -hide_banner -loglevel error -y -i "$src" \
     -vf "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,fps=$FPS,setsar=1" \
     -t "$dur" -c:v libx264 -preset fast -crf 17 -pix_fmt yuv420p \
-    -af "aresample=48000,pan=stereo|c0=c0|c1=c1" -c:a aac -b:a 192k "$dst"
+    -af "aresample=48000,pan=stereo|c0=c0|c1=c1,volume=$vol" -c:a aac -b:a 192k "$dst"
 done
 
 # ---- 3. end card: 8s charcoal, centered white lockup + gold CTA ----
