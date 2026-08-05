@@ -33,7 +33,10 @@ window.FLH = {
     { id: 'chart', name: 'CHART', stage: 'capability', audience: 'all', partner: 'vuit', status: 'in-development',
       what: 'FLH’s AI fluency program — a self-paced platform, a 4-week intensive and an ongoing workshop series with VUIT.',
       who: 'All staff',
-      value: 'Builds baseline AI capability across the workforce and drives AI enablement, including a manager workstream that translates AI exposure into workforce actions.' },
+      value: 'Builds baseline AI capability across the workforce and drives AI enablement, including a manager workstream that translates AI exposure into workforce actions.',
+      volume: { n: 22, label: 'CHART courses in the Learning Series catalog' },
+      stat: { n: '3', label: 'editions per course: classroom, facilitator, self-paced' },
+      next: 'Ten courses added to close the gaps the curriculum review found: data and analysis, written guardrails, verifying AI output, breadth of use across a week, and personal automation for all staff, plus five manager courses on people data, modeling adoption, delegating to AI versus people, hiring decisions and change leadership. Fourteen of the catalog’s courses now carry the Manager Voyage tag.' },
 
     { id: 'lr', name: 'Leadership Redefined', stage: 'leadership', audience: 'leaders', partner: 'inhouse', status: 'live',
       what: 'Vanderbilt’s premier chancellor-sponsored development program for senior leaders: six leadership modules, a capstone innovation project, three personalized coaching sessions and weekly synthesis sessions. The LR Symposium is one delivery vehicle for a cohort, not the program itself.',
