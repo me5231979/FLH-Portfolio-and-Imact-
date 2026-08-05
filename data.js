@@ -227,11 +227,11 @@ window.FLH = {
       title: 'Create Vanderbilt Workforce Intelligence and Transfer Portal',
       desc: 'By Q4, launch an AI-enabled system that helps leaders see talent needs, retain top talent, strengthen succession and connect employees to internal opportunities across the university.',
       unit: 'of business units live on the system',
-      measure: 'Engagement Consultants work all 39 business units to identify critical roles; talent is assessed against validated skills from the skills-based job architecture; Oracle is the system of record and the Skill Matrix platform carries all-staff communication.',
+      measure: 'Engagement Consultants work all 39 business units to identify critical roles; talent is assessed against validated skills from the skills-based job architecture; Oracle is the system of record and the Talent Compass platform carries all-staff communication.',
       kpis: [
         { label: 'Critical roles identified in each business unit', target: '85% — 33 of 39 business units', pct: null },
         { label: 'Of the identified critical roles, a talent assessment is completed — a 9-box or similar succession tool in Oracle', target: '85% — 33 of 39 business units', pct: null },
-        { label: 'All staff informed of and enrolled into the Skill Matrix platform, engagement monitored', target: '100% of staff', pct: null }
+        { label: 'All staff informed of and enrolled into the Talent Compass platform, engagement monitored', target: '100% of staff', pct: null }
       ],
       scale: [
         { label: 'Base value', n: '6%',  detail: '2 of 39 business units' },
