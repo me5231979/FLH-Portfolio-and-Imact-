@@ -1,0 +1,23 @@
+{
+  "name": "primary",
+  "version": "1.0.0",
+  "description": "A standalone single-page dashboard that makes the Futures Learning Hub portfolio visible as a system: all programs, one purpose — growth.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/me5231979/FLH-Portfolio-and-Imact-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/me5231979/FLH-Portfolio-and-Imact-/issues"
+  },
+  "homepage": "https://github.com/me5231979/FLH-Portfolio-and-Imact-#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
