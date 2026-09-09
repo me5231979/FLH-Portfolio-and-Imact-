@@ -279,7 +279,7 @@ const CARD_SETS = {
   ],
   goals: [
     { eyebrow: 'FY27 &middot; PCB', title: 'Performance goals', big: '3', cap: 'workforce intelligence, manager effectiveness, AI readiness' },
-    { eyebrow: 'Goal 01 target', title: 'Business units live', big: '85%', cap: 'Workforce Intelligence and Transfer Portal &mdash; 33 of 39' },
+    { eyebrow: 'Goal 01 target', title: 'Business units live', big: '85%', cap: 'Workforce Intelligence and Talent Marketplace &mdash; 33 of 39' },
     { eyebrow: 'Goal 02 target', title: 'Managers at the standard', big: '80%', cap: 'demonstrated leader behavior, measured at scale' },
     { eyebrow: 'Goal 03 target', title: 'AI-readiness actions', big: '25%', cap: 'managers or teams assessed, actions implemented' }
   ]

@@ -63,8 +63,8 @@ window.FLH = {
       volume: { n: 1000, label: 'employees registered for at least one session' },
       nps: { score: 4.75, responses: 497 } },
 
-    { id: 'transfer', name: 'Transfer Portal', stage: 'mobility', audience: 'all', partner: 'oracle', status: 'live',
-      what: 'Vanderbilt’s Oracle Grow–based talent platform and the structured mobility program built on it — change management, a mandatory five-business-day internal search process and deliberate people practices. The Transfer Portal is the employee front door; Workforce Intelligence is the leader-facing view.',
+    { id: 'transfer', name: 'Talent Marketplace', stage: 'mobility', audience: 'all', partner: 'oracle', status: 'live',
+      what: 'Vanderbilt’s Oracle Grow–based talent platform and the structured mobility program built on it — change management, a mandatory five-business-day internal search process and deliberate people practices. The Talent Marketplace is the employee front door; Workforce Intelligence is the leader-facing view.',
       who: 'All staff',
       value: 'Connects staff to growth opportunities, surfaces internal talent, and gives committed staff a visible path forward — with tools for leaders to act before a vacancy or resignation forces the conversation.',
       next: 'Workforce Intelligence and remaining components launch by Q4 — FY27 Goal 1 targets 85% of business units live.',
@@ -123,7 +123,7 @@ window.FLH = {
     { a: 'lr',        b: 'alumni',      why: 'Every LR graduate flows into the alumni series — the program doesn’t end at the capstone.' },
     { a: 'voyage',    b: 'lr',          why: 'Manager Voyage sets the management baseline that feeds the senior-leader pipeline into LR.' },
     { a: 'lr',        b: 'coaching',    why: 'Three personalized coaching sessions are built into LR — the coaching practice extends that model to all staff.' },
-    { a: 'chart',     b: 'transfer',    why: 'CHART’s manager workstream translates AI exposure into the workforce actions the Transfer Portal operationalizes.' },
+    { a: 'chart',     b: 'transfer',    why: 'CHART’s manager workstream translates AI exposure into the workforce actions the Talent Marketplace operationalizes.' },
     { a: 'chart',     b: 'navigators',  why: 'CHART’s workshop series is a delivery lane for the trained facilitator network.' },
     { a: 'chart',     b: 'voyage',      why: 'CHART’s manager workstream feeds Manager Voyage — AI fluency becomes part of the management baseline.' },
     { a: 'navigators',b: 'anchors',     why: 'Navigators-trained facilitators extend FLH’s reach through recurring sessions like Anchors Edge.' },
@@ -131,13 +131,13 @@ window.FLH = {
     { a: 'anchors',   b: 'transfer',    why: 'Weekly sessions spotlight the platform — Navigate sessions turn awareness into its 90% adoption.' },
     { a: 'anchors',   b: 'voyage',      why: 'Manager-focused sessions extend Voyage’s management baseline between cohorts.' },
     { a: 'speak',     b: 'cohort',      why: 'Both run on the EdAssist partnership — one benefit infrastructure, two doors.' },
-    { a: 'speak',     b: 'transfer',    why: 'SPEAK removes the language barrier so more staff can use the Transfer Portal’s path forward.' },
+    { a: 'speak',     b: 'transfer',    why: 'SPEAK removes the language barrier so more staff can use the Talent Marketplace’s path forward.' },
     { a: 'products',  b: 'transfer',    why: 'Oracle Grow is one of the governed products — oversight keeps the platform coherent.' },
     { a: 'products',  b: 'chart',       why: 'CHART’s self-paced platform sits inside the governed product portfolio.' },
     { a: 'vault',     b: 'products',    why: 'Enterprise governance and product oversight are two halves of the same stewardship.' },
-    { a: 'vault',     b: 'transfer',    why: 'VAULT keeps the talent strategy the Transfer Portal executes aligned and governed at the executive level.' },
+    { a: 'vault',     b: 'transfer',    why: 'VAULT keeps the talent strategy the Talent Marketplace executes aligned and governed at the executive level.' },
     { a: 'vault',     b: 'lr',          why: 'VAULT’s executive stakeholders are LR’s population — governance and development share a table.' },
-    { a: 'voyage',    b: 'transfer',    why: 'New managers learn the deliberate people practices the Transfer Portal depends on.' },
+    { a: 'voyage',    b: 'transfer',    why: 'New managers learn the deliberate people practices the Talent Marketplace depends on.' },
     { a: 'compliance',b: 'vault',       why: 'Compliance manages institutional risk; VAULT governs it at the enterprise level.' },
     { a: 'cohort',    b: 'transfer',    why: 'Certifications earned in cohorts surface as skills and readiness in the talent platform.' }
   ],
@@ -156,11 +156,11 @@ window.FLH = {
     themes: [
       { theme: 'Compliance & safety', n: 12378, share: 55, program: 'Compliance',
         top: 'Active Assailant Training · Institutional Neutrality · Protection of Minors' },
-      { theme: 'Enterprise systems', n: 3465, share: 15, program: 'Transfer Portal (Oracle backbone)',
+      { theme: 'Enterprise systems', n: 3465, share: 15, program: 'Talent Marketplace (Oracle backbone)',
         top: 'UKG timecards · Oracle Cloud Expenses · Vanderbilt One Card' },
       { theme: 'Role & department specific', n: 3054, share: 13, program: '',
         top: 'Student Affairs business processes · Vanderbilt Voyage Online · departmental tools' },
-      { theme: 'Career & talent marketplace', n: 1372, share: 6, program: 'Transfer Portal',
+      { theme: 'Career & talent marketplace', n: 1372, share: 6, program: 'Talent Marketplace',
         top: 'Navigate: Using the Talent Marketplace · career essentials courses' },
       { theme: 'Personal & professional growth', n: 1100, share: 5, program: 'Anchors Edge',
         top: 'Invest in You · Interpersonal Communication · wellbeing sessions' },
@@ -224,14 +224,14 @@ window.FLH = {
 
   goals: [
     { num: 1,
-      title: 'Create Vanderbilt Workforce Intelligence and Transfer Portal',
+      title: 'Create Vanderbilt Workforce Intelligence and Talent Marketplace',
       desc: 'By Q4, launch an AI-enabled system that helps leaders see talent needs, retain top talent, strengthen succession and connect employees to internal opportunities across the university.',
       unit: 'of business units live on the system',
-      measure: 'Engagement Consultants work all 39 business units to identify critical roles; talent is assessed against validated skills from the skills-based job architecture; Oracle is the system of record and the Transfer Portal platform carries all-staff communication.',
+      measure: 'Engagement Consultants work all 39 business units to identify critical roles; talent is assessed against validated skills from the skills-based job architecture; Oracle is the system of record and the Talent Marketplace platform carries all-staff communication.',
       kpis: [
         { label: 'Critical roles identified in each business unit', target: '85% — 33 of 39 business units', pct: null },
         { label: 'Of the identified critical roles, a talent assessment is completed — a 9-box or similar succession tool in Oracle', target: '85% — 33 of 39 business units', pct: null },
-        { label: 'All staff informed of and enrolled into the Transfer Portal platform, engagement monitored', target: '100% of staff', pct: null }
+        { label: 'All staff informed of and enrolled into the Talent Marketplace platform, engagement monitored', target: '100% of staff', pct: null }
       ],
       scale: [
         { label: 'Base value', n: '6%',  detail: '2 of 39 business units' },
